@@ -21,7 +21,7 @@ body {
       float: right;
       width: 290px;
       border: 1px solid #ccc;
-      margin-left: 100px;
+      margin-left: 50px;
       margin-top: 20px; }
       .header .header-left .search input {
         width: 249px;
@@ -87,17 +87,163 @@ body {
     margin: 0 auto; }
     .nav .nav-l .nav-left {
       float: left; }
-      .nav .nav-l .nav-left li {
-        display: inline-block; }
-        .nav .nav-l .nav-left li a {
+      .nav .nav-l .nav-left > li {
+        float: left; }
+        .nav .nav-l .nav-left > li a {
           font-size: 16px;
-          color: #fff;
-          padding: 0 30px;
+          color: #ddd;
+          padding: 0 38px;
           line-height: 55px; }
-        .nav .nav-l .nav-left li:first-child {
+        .nav .nav-l .nav-left > li:first-child {
+          background-color: #0c8ed9;
+          color: #fff; }
+        .nav .nav-l .nav-left > li:last-child > a {
+          background: url(http://static.kgimg.com/public/root/images/arrowMored.png) no-repeat no-repeat 80px; }
+          .nav .nav-l .nav-left > li:last-child > a:hover {
+            background: url(http://static.kgimg.com/public/root/images/arrowMoreu.png) no-repeat no-repeat 80px; }
+        .nav .nav-l .nav-left > li:last-child .gengduo {
+          display: none;
+          height: 146px;
+          background-color: #252a32; }
+          .nav .nav-l .nav-left > li:last-child .gengduo li {
+            width: 113px;
+            height: 36px; }
+            .nav .nav-l .nav-left > li:last-child .gengduo li a {
+              padding: 0 40px;
+              line-height: 36px;
+              font-size: 15px;
+              color: #bbb; }
+            .nav .nav-l .nav-left > li:last-child .gengduo li:hover {
+              background-color: #2D343D; }
+        .nav .nav-l .nav-left > li:last-child:hover .gengduo {
+          display: block; }
+        .nav .nav-l .nav-left > li:hover {
           background-color: #0c8ed9;
           color: #fff; }
     .nav .nav-l .nav-right {
-      float: right; }
+      float: right;
+      margin-top: 16px; }
       .nav .nav-l .nav-right li {
-        display: inline-block; }
+        display: inline-block;
+        margin-left: 30px; }
+        .nav .nav-l .nav-right li a {
+          color: #bbb;
+          font-size: 13px;
+          padding-left: 20px;
+          background: url(http://static.kgimg.com/public/root/images/sprite.png); }
+          .nav .nav-l .nav-right li a:hover {
+            color: #14a9ff; }
+        .nav .nav-l .nav-right li:first-child a {
+          background-position: 0 -119px; }
+          .nav .nav-l .nav-right li:first-child a:hover {
+            background-position: 0 -101px; }
+        .nav .nav-l .nav-right li:nth-child(2) a {
+          background-position: 0 -155px; }
+          .nav .nav-l .nav-right li:nth-child(2) a:hover {
+            background-position: 0 -137px; }
+        .nav .nav-l .nav-right li:nth-child(3) a {
+          background-position: 0 -191px; }
+          .nav .nav-l .nav-right li:nth-child(3) a:hover {
+            background-position: 0 -173px; }
+        .nav .nav-l .nav-right li:nth-child(4) a {
+          background-position: 0 -226px; }
+          .nav .nav-l .nav-right li:nth-child(4) a:hover {
+            background-position: 0 -208px; }
+        .nav .nav-l .nav-right li:last-child a {
+          background-position: 0 -281px; }
+          .nav .nav-l .nav-right li:last-child a:hover {
+            background-position: 0 -245px; }
+
+.lunbotu {
+  position: absolute;
+  width: 1270px;
+  height: 500px;
+  overflow: hidden;
+  z-index: -9; }
+  .lunbotu .lunbo li {
+    position: absolute; }
+    .lunbotu .lunbo li img {
+      display: none;
+      position: absolute;
+      height: 500px;
+      left: -320px; }
+    .lunbotu .lunbo li:first-child img {
+      display: block; }
+  .lunbotu .lol {
+    position: absolute;
+    width: 100%;
+    bottom: 80px;
+    margin: 0 auto;
+    text-align: center; }
+    .lunbotu .lol a {
+      display: inline-block;
+      width: 12px;
+      height: 10px;
+      color: #fff;
+      font-size: 0;
+      background: url(http://static.kgimg.com/public/root/images/sprite.png);
+      background-position: 0 -22px; }
+    .lunbotu .lol .active {
+      background-position: 0 -37px; }
+  .lunbotu > a {
+    display: none;
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    width: 60px;
+    height: 120px;
+    background: url(http://static.kgimg.com/public/root/images/sprite.png); }
+  .lunbotu .lunbo-left {
+    left: 0;
+    background-position: 0 -755px; }
+    .lunbotu .lunbo-left:hover {
+      background-position: 0 -880px; }
+  .lunbotu .lunbo-right {
+    right: 0;
+    background-position: 0 -1130px; }
+    .lunbotu .lunbo-right:hover {
+      background-position: 0 -1005px; }
+  .lunbotu .lunbo-xia {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.3); }
+    .lunbotu .lunbo-xia a {
+      display: inline-block;
+      width: 130px;
+      padding: 0 30px;
+      color: #fff;
+      font-size: 15px; }
+      .lunbotu .lunbo-xia a:first-child {
+        background: url(http://static.kgimg.com/public/root/images/pc.png) no-repeat left; }
+      .lunbotu .lunbo-xia a:nth-child(2) {
+        background: url(http://static.kgimg.com/public/root/images/mac.png) no-repeat left; }
+      .lunbotu .lunbo-xia a:last-child {
+        background: url(http://static.kgimg.com/public/root/images/andriod.png) no-repeat left;
+        margin-left: 30px; }
+    .lunbotu .lunbo-xia span {
+      height: 14px;
+      border: 1px solid rgba(255, 255, 255, 0.2); }
+  .lunbotu:hover > a {
+    display: block; }
+
+.content-1 {
+  top: 500px;
+  width: 1000px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 550px;
+  border: 1px solid red; }
+  .content-1 .content-1-left {
+    width: 650px;
+    height: 390px;
+    float: left;
+    border: 1px solid blue; }
+  .content-1 .content-1-right {
+    width: 350px;
+    height: 390px;
+    float: right;
+    border: 1px solid black; }

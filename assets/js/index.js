@@ -23,6 +23,25 @@ $(function() {
         });
     })
 
+
+    // ++++++++++++++++++++++++++++
+    // 原生JS
+    // var li = document.querySelectorAll('.yiru li');
+    // var ul = document.querySelectorAll('.xxk ul');
+    // for (var i = 0; i < li.length; i++) {
+    //     li[i].index = i;
+    //     li[i].onmouseover = function() {
+    //         console.log(this.index);
+    //         ul[this.index].style.display = 'block';
+    //     }
+    // }
+    var index2 = 0;
+    $('.yiru li').mouseover(function() {
+        $('.xxk ul').css('display', 'none')
+        index2 = $(this).index();
+        $('.xxk ul').eq(index2).css('display', 'block');
+    })
+
     function lun(cb) {
         $('.lunbo img').eq(index).fadeOut(600);
         $('.lol a').eq(index).removeClass();

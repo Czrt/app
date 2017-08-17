@@ -129,14 +129,16 @@ body {
                         }
                     }
                     .gengduo {
+                        position: absolute;
                         display: none;
                         height: 146px;
                         background-color: #252a32;
+                        z-index: 2;
                         li {
-                            width: 113px;
+                            width: 108px;
                             height: 36px;
+                            text-align: center;
                             a {
-                                padding: 0 40px;
                                 line-height: 36px;
                                 font-size: 15px;
                                 color: #bbb;
@@ -210,11 +212,11 @@ body {
 
 
 .lunbotu {
-    position: absolute;
+    position: relative;
     width: 1270px;
     height: 500px;
     overflow: hidden;
-    z-index: -9;
+    z-index: 1;
     .lunbo {
         li {
             position: absolute;
@@ -306,23 +308,178 @@ body {
     }
 }
 
+@mixin tian {
+    >p {
+        position: absolute;
+        right: 0;
+        width: 152px;
+        height: 30px;
+        color: #fff;
+        line-height: 30px;
+        text-align: right;
+        background: url(http://static.kgimg.com/public/root/images/cptTBg.png) no-repeat;
+        i {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            padding-right: 15px;
+            background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
+            background-position: 0 -267px;
+        }
+    }
+    img {
+        width: 100%;
+        height: 100%;
+    }
+    .content-1-left-tu1-di {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 38px;
+        padding: 6px 8px;
+        background: rgba(0, 0, 0, .5);
+
+        p:first-child {
+            display: block;
+            width: 70%;
+            color: #fff;
+            font-size: 14px; // ????????????????
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+        p:last-child {
+            display: block;
+            width: 70%;
+            color: #cfcfcf;
+            font-size: 14px;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+    .shadow {
+        display: none;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .3);
+        .shadow-fang {
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            width: 36px;
+            height: 36px;
+            background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
+            background-position: 0px -401px;
+        }
+    }
+    &:hover .shadow {
+        display: block;
+    }
+}
+
 .content-1 {
-    top: 500px;
     width: 1000px;
     height: 400px;
     margin: 0 auto;
-    margin-top: 550px;
-    border: 1px solid red;
+    margin-top: 50px;
     .content-1-left {
-        width: 650px;
+        width: 660px;
         height: 390px;
         float: left;
-        border: 1px solid blue;
+        .content-1-left-top {
+            width: 100%;
+            height: 30px;
+            line-height: 60px;
+            padding-bottom: 30px;
+            span {
+                float: right;
+            }
+        }
+        .content-1-left-tu {
+            .content-1-left-tu1 {
+                position: relative;
+                float: left;
+                width: 325px;
+                height: 325px;
+                margin: 0 5px 5px 0;
+
+                overflow: hidden;
+                @include tian;
+            }
+            .content-1-left-tu2 {
+                position: relative;
+                float: left;
+                top: 0;
+                width: 160px;
+                height: 160px;
+                margin: 0 5px 5px 0;
+
+                overflow: hidden;
+                @include tian;
+            }
+            .content-1-left-tu3 {
+                position: relative;
+                float: left;
+                top: 0;
+                width: 160px;
+                height: 160px;
+                margin: 0 5px 5px 0;
+
+                overflow: hidden;
+                @include tian;
+            }
+            .content-1-left-tu4 {
+                position: relative;
+                float: left;
+                top: 0;
+                width: 160px;
+                height: 160px;
+                margin: 0 5px 5px 0;
+
+                overflow: hidden;
+                @include tian;
+            }
+            .content-1-left-tu5 {
+                position: relative;
+                float: left;
+                top: 0;
+                width: 160px;
+                height: 160px;
+                margin: 0 5px 5px 0;
+
+                overflow: hidden;
+                @include tian;
+            }
+        }
     }
     .content-1-right {
-        width: 350px;
+        width: 320px;
         height: 390px;
         float: right;
-        border: 1px solid black;
+        .content-1-right-top {
+            height: 30px;
+            padding-bottom: 30px;
+            line-height: 60px;
+            img {
+                float: left;
+            }
+            span {
+                float: right;
+            }
+        }
+        .content-1-right-tu {
+            height: 325px;
+            border: 1px solid red;
+            .content-1-right-tu1 {
+                height: 98px;
+                background-color: #ddd;
+                img {
+                    width: 98px;
+                    height: 98px;
+                }
+            }
+        }
     }
 }

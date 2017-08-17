@@ -1,6 +1,7 @@
 $(function() {
     var index = 0;
     var len = $('.lunbo li img').length;
+
     setInterval(function() {
         lun(function() {
             index = ++index >= len ? 0 : index;

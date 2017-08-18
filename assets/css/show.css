@@ -1,0 +1,317 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  -webkit-user-select: none;
+  font: 13px/1.5 \5FAE\8F6F\96C5\9ED1, simsun, sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 1000px;
+  height: 78px;
+  line-height: 78px;
+  margin: 0 auto;
+}
+
+.header .header-left {
+  float: left;
+}
+
+.header .header-left h1 {
+  float: left;
+}
+
+.header .header-left .search {
+  position: relative;
+  float: right;
+}
+
+.header .header-left .search input {
+  width: 230px;
+  height: 30px;
+  outline: none;
+  padding: 0 10px;
+  margin-left: 50px;
+}
+
+.header .header-left .search a {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}
+
+.header .header-right {
+  float: right;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.header .header-right ul {
+  float: left;
+}
+
+.header .header-right ul li {
+  float: left;
+  padding: 0 15px;
+}
+
+.header .header-right ul li a {
+  color: #777;
+}
+
+.header .header-right .login {
+  float: right;
+  margin-left: 20px;
+}
+
+.header .header-right .login a {
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  color: #333;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #333;
+  margin: 0 5px;
+  border-radius: 2px;
+}
+
+.header .header-right .login a:first-child {
+  color: #fff;
+  border: 1px solid #158fe1;
+  background-color: #158fe1;
+}
+
+.header .header-right .login a:last-child {
+  border: 1px solid #dbdbdb;
+}
+
+.nav {
+  width: 100%;
+  height: 55px;
+  background-color: #2c323b;
+}
+
+.nav .nav-l {
+  width: 1000px;
+  height: 55px;
+  line-height: 55px;
+  margin: 0 auto;
+}
+
+.nav .nav-l .nav-left {
+  position: relative;
+  float: left;
+  font-size: 16px;
+}
+
+.nav .nav-l .nav-left > li {
+  display: inline-block;
+  height: 55px;
+}
+
+.nav .nav-l .nav-left > li a {
+  color: #ddd;
+  padding: 0 20px;
+}
+
+.nav .nav-l .nav-left > li:last-child > a {
+  color: #ddd;
+  padding: 0 38px;
+  background: url(http://static.kgimg.com/public/root/images/arrowMored.png) no-repeat no-repeat 80px;
+}
+
+.nav .nav-l .nav-left > li:last-child .gengduo {
+  display: none;
+  position: absolute;
+  background-color: #252a32;
+}
+
+.nav .nav-l .nav-left > li:last-child .gengduo li {
+  text-align: center;
+  width: 108px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.nav .nav-l .nav-left > li:last-child:hover .gengduo {
+  display: block;
+}
+
+.nav .nav-l .nav-left > li:last-child:hover > a {
+  background: url(http://static.kgimg.com/public/root/images/arrowMoreu.png) no-repeat no-repeat 80px;
+}
+
+.nav .nav-l .nav-left > li:hover {
+  background-color: #0c8ed9;
+  color: #fff;
+}
+
+.nav .nav-l .nav-right {
+  float: right;
+}
+
+.nav .nav-l .nav-right li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.nav .nav-l .nav-right li a {
+  color: #bbb;
+  font-size: 13px;
+  padding-left: 20px;
+  background: url(http://static.kgimg.com/public/root/images/sprite.png);
+}
+
+.nav .nav-l .nav-right li a:hover {
+  color: #14a9ff;
+}
+
+.nav .nav-l .nav-right li:first-child a {
+  background-position: 0 -119px;
+}
+
+.nav .nav-l .nav-right li:first-child a:hover {
+  background-position: 0 -101px;
+}
+
+.nav .nav-l .nav-right li:nth-child(2) a {
+  background-position: 0 -155px;
+}
+
+.nav .nav-l .nav-right li:nth-child(2) a:hover {
+  background-position: 0 -137px;
+}
+
+.nav .nav-l .nav-right li:nth-child(3) a {
+  background-position: 0 -191px;
+}
+
+.nav .nav-l .nav-right li:nth-child(3) a:hover {
+  background-position: 0 -173px;
+}
+
+.nav .nav-l .nav-right li:nth-child(4) a {
+  background-position: 0 -226px;
+}
+
+.nav .nav-l .nav-right li:nth-child(4) a:hover {
+  background-position: 0 -208px;
+}
+
+.nav .nav-l .nav-right li:last-child a {
+  background-position: 0 -281px;
+}
+
+.nav .nav-l .nav-right li:last-child a:hover {
+  background-position: 0 -245px;
+}
+
+.container {
+  width: 1000px;
+  height: 1000px;
+  border: 1px solid red;
+  margin: 10px auto;
+}
+
+.container .container-top {
+  color: #ada8a8;
+}
+
+.container .container-top a {
+  color: #333;
+}
+
+.container .container-top a:hover {
+  text-decoration: underline;
+}
+
+.container .container-top span {
+  color: #333;
+}
+
+.container .content {
+  height: 100%;
+  margin-top: 10px;
+  border: 1px solid blue;
+}
+
+.container .content .content-left {
+  width: 180px;
+  height: 100%;
+  border-right: 1px solid red;
+}
+
+.container .content .content-left .shadow {
+  width: 180px;
+  height: 169px;
+  background: url(http://www.kugou.com/yy/static/images/other.png?v=png_8&time=2014_02_27_05_17_36) no-repeat -1px -750px;
+}
+
+.container .content .content-left .shadow img {
+  margin-left: 5px;
+}
+
+.container .content .content-left a {
+  position: relative;
+  display: inline-block;
+  border: 1px solid #dbdbdb;
+  text-align: center;
+  border-color: #169af3;
+  color: #fff;
+  background: #169af3;
+  padding: 5px 25px 7px 40px;
+  border-radius: 2px;
+}
+
+.container .content .content-left a span {
+  position: absolute;
+  top: 9px;
+  left: 19px;
+  width: 20px;
+  height: 20px;
+  background: url(http://static.kgimg.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
+  background-position: -300px -90px;
+}
+
+.container .content .content-left a:hover {
+  background: #158fe1;
+}
+
+.container .content .content-left .wenben1 {
+  width: 160px;
+  line-height: 23px;
+}
+
+.container .content .content-left .wenben1 span {
+  color: #7d7d7d;
+}
+
+.container .content .content-left .wenben2 {
+  position: relative;
+  width: 160px;
+  height: 300px;
+}
+
+.container .content .content-left .wenben2 .wenben2-zhu {
+  position: absolute;
+  width: 148px;
+  height: 300px;
+  border: 1px solid red;
+}
+
+.container .content .content-left .wenben2 .tiao {
+  position: absolute;
+  right: -20px;
+  width: 8px;
+  height: 200px;
+  background-color: #ccc;
+  border-radius: 8px;
+}

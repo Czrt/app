@@ -126,9 +126,6 @@ body {
                 &:last-child {
                     >a {
                         background: url(http://static.kgimg.com/public/root/images/arrowMored.png) no-repeat no-repeat 80px;
-                        &:hover {
-                            background: url(http://static.kgimg.com/public/root/images/arrowMoreu.png) no-repeat no-repeat 80px;
-                        }
                     }
                     .gengduo {
                         position: absolute;
@@ -153,6 +150,9 @@ body {
                 }
                 &:last-child:hover .gengduo {
                     display: block;
+                }
+                &:last-child:hover>a {
+                    background: url(http://static.kgimg.com/public/root/images/arrowMoreu.png) no-repeat no-repeat 80px;
                 }
                 &:hover {
                     background-color: #0c8ed9;

@@ -150,10 +150,6 @@ body {
   background: url(http://static.kgimg.com/public/root/images/arrowMored.png) no-repeat no-repeat 80px;
 }
 
-.nav .nav-l .nav-left > li:last-child > a:hover {
-  background: url(http://static.kgimg.com/public/root/images/arrowMoreu.png) no-repeat no-repeat 80px;
-}
-
 .nav .nav-l .nav-left > li:last-child .gengduo {
   position: absolute;
   display: none;
@@ -180,6 +176,10 @@ body {
 
 .nav .nav-l .nav-left > li:last-child:hover .gengduo {
   display: block;
+}
+
+.nav .nav-l .nav-left > li:last-child:hover > a {
+  background: url(http://static.kgimg.com/public/root/images/arrowMoreu.png) no-repeat no-repeat 80px;
 }
 
 .nav .nav-l .nav-left > li:hover {

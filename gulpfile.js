@@ -8,7 +8,8 @@ gulp.task('server', function() {
     // 初始化服务器，进行相关配置
     browserSync.init({
         // 设置服务器所有文件的起始路径
-        server: "./"
+        server: "./",
+        index: "./show.html"
     });
 
     // 在['scss']这里的含义：先执行完成scss编译任务，在执行浏览器刷新

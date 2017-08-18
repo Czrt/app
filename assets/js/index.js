@@ -42,6 +42,12 @@ $(function() {
         $('.xxk ul').eq(index2).css('display', 'block');
     })
 
+    $('.yiru1 li').mouseover(function() {
+        $('.geshou-tu>li').css('display', 'none');
+        var index3 = $(this).index();
+        $('.geshou-tu>li').eq(index3).css('display', 'block');
+    })
+
     function lun(cb) {
         $('.lunbo img').eq(index).fadeOut(600);
         $('.lol a').eq(index).removeClass();
@@ -49,4 +55,5 @@ $(function() {
         $('.lunbo img').eq(index).fadeIn(600);
         $('.lol a').eq(index).addClass('active');
     }
+
 })

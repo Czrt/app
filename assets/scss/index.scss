@@ -7,8 +7,7 @@
 
 body {
     font: 13px/1.5 \5FAE\8F6F\96C5\9ED1, simsun, sans-serif;
-}
-
+} //头部样式   start 
 .header {
     width: 1000px;
     height: 78px;
@@ -98,8 +97,7 @@ body {
             }
         }
     }
-}
-
+} // 导航栏样式  start
 .nav {
     width: 100%;
     height: 55px;
@@ -207,10 +205,7 @@ body {
             }
         }
     }
-}
-
-
-
+} // 轮播图样式   start
 .lunbotu {
     position: relative;
     width: 1270px;
@@ -306,8 +301,7 @@ body {
     &:hover>a {
         display: block;
     }
-}
-
+} // 混合1
 @mixin tian {
     >p {
         position: absolute;
@@ -377,8 +371,7 @@ body {
     &:hover .shadow {
         display: block;
     }
-}
-
+} // 混合2
 @mixin tian1 {
 
     img {
@@ -434,8 +427,7 @@ body {
     &:hover .shadow2 {
         display: block;
     }
-}
-
+} // 主体内容1 start
 .content-1 {
     width: 1000px;
     height: 400px;
@@ -555,8 +547,7 @@ body {
 .advert1 {
     width: 1000px;
     margin: 10px auto;
-}
-
+} // 混合3
 @mixin tian2 {
 
     li {
@@ -614,8 +605,7 @@ body {
             display: block;
         }
     }
-}
-
+} // 混合4
 @mixin tian3 {
 
     a {
@@ -657,8 +647,7 @@ body {
     &:hover .shadow4 {
         display: block;
     }
-}
-
+} // 主体内容2
 .content-2 {
     width: 1000px;
     height: 375px;
@@ -845,9 +834,173 @@ body {
     }
 }
 
+@mixin tian4 ($width, $height) {
+    float: left;
+    position: relative;
+    width: $width;
+    height: $height;
+    margin: 0 5px 5px 0;
+    a {
+        color: #fff;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+        .shadow6 {
+            display: none;
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .3);
+        }
+        p {
+            position: absolute;
+            bottom: 0;
+            font-size: 14px;
+            padding: 6px 8px;
+        }
+    }
+    &:hover .shadow6 {
+        display: block;
+    }
+}
+
+// 主体内容3
 .content-3 {
     width: 1000px;
     height: 355px;
     margin: 0 auto;
     border: 1px solid red;
+    .diantai {
+        float: left;
+        width: 650px;
+        height: 355px;
+        .diantai-top {
+            width: 100%;
+            height: 30px;
+            line-height: 60px;
+            padding-bottom: 30px;
+            img {
+                margin-top: 10px;
+            }
+            span {
+                float: right;
+            }
+        }
+        .diantai-tu {
+            width: 100%;
+            height: 310px;
+            li {
+                display: inline-block;
+                width: 100px;
+                height: 130px;
+                margin-right: 26px;
+                margin-bottom: 25px;
+                a {
+                    position: relative;
+                    display: block;
+                    width: 100px;
+                    height: 130px;
+                    color: #333;
+                    text-align: center;
+                    img {
+                        width: 100%;
+                    }
+                    .shadow5 {
+                        display: none;
+                        position: absolute;
+                        width: 100px;
+                        height: 100px;
+                        background: rgba(0, 0, 0, .2) url(http://static.kgimg.com/public/root/images/radio.png) no-repeat left top;
+                        span {
+                            position: absolute;
+                            left: 30px;
+                            top: 30px;
+                            width: 42px;
+                            height: 42px;
+                            background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
+                            background-position: 0 -442px;
+                        }
+                    }
+                    p {
+                        width: 100px;
+                        font-size: 14px;
+                        white-space: nowrap;
+                        overflow: hidden;
+                        text-overfolw: ellipsis;
+                    }
+                    &:hover {
+                        color: #009af3;
+                    }
+                    &:hover .shadow5 {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+    .geshou {
+        float: right;
+        width: 330px;
+        height: 380px;
+        border: 1px solid red;
+        .geshou-top {
+            width: 330px;
+            height: 30px;
+            line-height: 30px;
+            padding-bottom: 30px;
+            border: 1px solid blue;
+            img {
+                float: left;
+            }
+
+            ul {
+                float: left;
+                margin-left: 15px;
+                li {
+                    float: left;
+                    margin-right: 20px;
+                    font-size: 14px;
+                }
+            }
+        }
+        .geshou-tu {
+            width: 330px;
+            height: 270px;
+            border: 1px solid red;
+            >ul {
+                display: none;
+                >li {
+                    ul {
+                        li {
+                            @include tian4(160px, 160px);
+                        }
+                        >.li3 {
+                            @include tian4(105px, 105px);
+                        }
+                    }
+                }
+                &:first-child {
+                    display: block;
+                }
+            }
+        }
+        .yiru2 {
+            width: 330px;
+            text-align: center;
+            a {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                font-size: 0;
+                border-radius: 50%;
+                margin: 0 10px;
+                background-color: #ccc;
+                &:hover {
+                    background-color: #009af3;
+                }
+            }
+        }
+    }
 }

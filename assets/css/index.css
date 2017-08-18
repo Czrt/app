@@ -250,7 +250,7 @@ body {
 
 .lunbotu {
   position: relative;
-  width: 1270px;
+  width: 1265px;
   height: 500px;
   overflow: hidden;
   z-index: 1;
@@ -556,264 +556,6 @@ body {
   display: block;
 }
 
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 {
-  position: relative;
-  float: left;
-  top: 0;
-  width: 160px;
-  height: 160px;
-  margin: 0 5px 5px 0;
-  overflow: hidden;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 > p {
-  position: absolute;
-  right: 0;
-  width: 152px;
-  height: 30px;
-  color: #fff;
-  line-height: 30px;
-  text-align: right;
-  background: url(http://static.kgimg.com/public/root/images/cptTBg.png) no-repeat;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 > p i {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  padding-right: 15px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0 -267px;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 img {
-  width: 100%;
-  height: 100%;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 .content-1-left-tu1-di {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 38px;
-  padding: 6px 8px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 .content-1-left-tu1-di p:first-child {
-  display: block;
-  width: 70%;
-  color: #fff;
-  font-size: 14px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 .content-1-left-tu1-di p:last-child {
-  display: block;
-  width: 70%;
-  color: #cfcfcf;
-  font-size: 14px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 .shadow {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3 .shadow .shadow-fang {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 36px;
-  height: 36px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0px -401px;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu3:hover .shadow {
-  display: block;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 {
-  position: relative;
-  float: left;
-  top: 0;
-  width: 160px;
-  height: 160px;
-  margin: 0 5px 5px 0;
-  overflow: hidden;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 > p {
-  position: absolute;
-  right: 0;
-  width: 152px;
-  height: 30px;
-  color: #fff;
-  line-height: 30px;
-  text-align: right;
-  background: url(http://static.kgimg.com/public/root/images/cptTBg.png) no-repeat;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 > p i {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  padding-right: 15px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0 -267px;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 img {
-  width: 100%;
-  height: 100%;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 .content-1-left-tu1-di {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 38px;
-  padding: 6px 8px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 .content-1-left-tu1-di p:first-child {
-  display: block;
-  width: 70%;
-  color: #fff;
-  font-size: 14px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 .content-1-left-tu1-di p:last-child {
-  display: block;
-  width: 70%;
-  color: #cfcfcf;
-  font-size: 14px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 .shadow {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4 .shadow .shadow-fang {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 36px;
-  height: 36px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0px -401px;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu4:hover .shadow {
-  display: block;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 {
-  position: relative;
-  float: left;
-  top: 0;
-  width: 160px;
-  height: 160px;
-  margin: 0 5px 5px 0;
-  overflow: hidden;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 > p {
-  position: absolute;
-  right: 0;
-  width: 152px;
-  height: 30px;
-  color: #fff;
-  line-height: 30px;
-  text-align: right;
-  background: url(http://static.kgimg.com/public/root/images/cptTBg.png) no-repeat;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 > p i {
-  display: inline-block;
-  width: 14px;
-  height: 14px;
-  padding-right: 15px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0 -267px;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 img {
-  width: 100%;
-  height: 100%;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 .content-1-left-tu1-di {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  height: 38px;
-  padding: 6px 8px;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 .content-1-left-tu1-di p:first-child {
-  display: block;
-  width: 70%;
-  color: #fff;
-  font-size: 14px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 .content-1-left-tu1-di p:last-child {
-  display: block;
-  width: 70%;
-  color: #cfcfcf;
-  font-size: 14px;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 .shadow {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5 .shadow .shadow-fang {
-  position: absolute;
-  right: 10px;
-  bottom: 10px;
-  width: 36px;
-  height: 36px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0px -401px;
-}
-
-.content-1 .content-1-left .content-1-left-tu .content-1-left-tu5:hover .shadow {
-  display: block;
-}
-
 .content-1 .content-1-right {
   width: 320px;
   height: 390px;
@@ -904,138 +646,6 @@ body {
   display: block;
 }
 
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2 {
-  position: relative;
-  height: 98px;
-  background-color: #f6f6f6;
-  margin-bottom: 15px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2 img {
-  float: left;
-  width: 98px;
-  height: 98px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2 .content-list {
-  float: left;
-  width: 200px;
-  height: 68px;
-  font-size: 14px;
-  padding: 15px 10px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2 .content-list dl dt {
-  color: #333;
-  font-weight: 700;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2 .content-list dl dd {
-  width: 180px;
-  color: #555;
-  line-height: 24px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2 .shadow2 {
-  display: none;
-  position: absolute;
-  width: 98px;
-  height: 98px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2 .shadow2 div {
-  width: 36px;
-  height: 36px;
-  margin: 0 auto;
-  margin-top: 30px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0px -401px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2 span {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  width: 7px;
-  height: 14px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0 -322px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu2:hover .shadow2 {
-  display: block;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3 {
-  position: relative;
-  height: 98px;
-  background-color: #f6f6f6;
-  margin-bottom: 15px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3 img {
-  float: left;
-  width: 98px;
-  height: 98px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3 .content-list {
-  float: left;
-  width: 200px;
-  height: 68px;
-  font-size: 14px;
-  padding: 15px 10px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3 .content-list dl dt {
-  color: #333;
-  font-weight: 700;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3 .content-list dl dd {
-  width: 180px;
-  color: #555;
-  line-height: 24px;
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3 .shadow2 {
-  display: none;
-  position: absolute;
-  width: 98px;
-  height: 98px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3 .shadow2 div {
-  width: 36px;
-  height: 36px;
-  margin: 0 auto;
-  margin-top: 30px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0px -401px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3 span {
-  position: absolute;
-  right: 10px;
-  top: 50%;
-  width: 7px;
-  height: 14px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0 -322px;
-}
-
-.content-1 .content-1-right .content-1-right-tu .content-1-right-tu3:hover .shadow2 {
-  display: block;
-}
-
 .advert1 {
   width: 1000px;
   margin: 10px auto;
@@ -1111,67 +721,6 @@ body {
   height: 280px;
 }
 
-.content-2 .xinge .xxk .ka1 li {
-  height: 35px;
-  line-height: 35px;
-}
-
-.content-2 .xinge .xxk .ka1 li a {
-  display: block;
-  height: 35px;
-  color: #333;
-  padding: 0 10px;
-}
-
-.content-2 .xinge .xxk .ka1 li a span {
-  float: left;
-}
-
-.content-2 .xinge .xxk .ka1 li a .dujia {
-  float: left;
-  display: inline-block;
-  width: 23px;
-  height: 20px;
-  margin-top: 12px;
-  margin-left: 15px;
-  background: url(http://static.kgimg.com/public/root/images/first.png) no-repeat 0 0;
-}
-
-.content-2 .xinge .xxk .ka1 li a .bofang {
-  display: none;
-  float: right;
-  width: 12px;
-  height: 14px;
-  background: url(http://static.kgimg.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
-  background-position: 0 0;
-  margin-top: 12px;
-  margin-right: 10px;
-}
-
-.content-2 .xinge .xxk .ka1 li a .xiazai {
-  display: none;
-  float: right;
-  width: 15px;
-  height: 15px;
-  background: url(http://static.kgimg.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
-  background-position: -90px 0;
-  margin-top: 12px;
-  margin-right: 15px;
-}
-
-.content-2 .xinge .xxk .ka1 li a .time {
-  float: right;
-}
-
-.content-2 .xinge .xxk .ka1 li a:hover {
-  background-color: #f5f8fb;
-  color: #009af3;
-}
-
-.content-2 .xinge .xxk .ka1 li:hover .blue {
-  display: block;
-}
-
 .content-2 .xinge .xxk .ka2 {
   display: none;
 }
@@ -1237,133 +786,7 @@ body {
   display: block;
 }
 
-.content-2 .xinge .xxk .ka3 {
-  display: none;
-}
-
-.content-2 .xinge .xxk .ka3 li {
-  height: 35px;
-  line-height: 35px;
-}
-
-.content-2 .xinge .xxk .ka3 li a {
-  display: block;
-  height: 35px;
-  color: #333;
-  padding: 0 10px;
-}
-
-.content-2 .xinge .xxk .ka3 li a span {
-  float: left;
-}
-
-.content-2 .xinge .xxk .ka3 li a .dujia {
-  float: left;
-  display: inline-block;
-  width: 23px;
-  height: 20px;
-  margin-top: 12px;
-  margin-left: 15px;
-  background: url(http://static.kgimg.com/public/root/images/first.png) no-repeat 0 0;
-}
-
-.content-2 .xinge .xxk .ka3 li a .bofang {
-  display: none;
-  float: right;
-  width: 12px;
-  height: 14px;
-  background: url(http://static.kgimg.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
-  background-position: 0 0;
-  margin-top: 12px;
-  margin-right: 10px;
-}
-
-.content-2 .xinge .xxk .ka3 li a .xiazai {
-  display: none;
-  float: right;
-  width: 15px;
-  height: 15px;
-  background: url(http://static.kgimg.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
-  background-position: -90px 0;
-  margin-top: 12px;
-  margin-right: 15px;
-}
-
-.content-2 .xinge .xxk .ka3 li a .time {
-  float: right;
-}
-
-.content-2 .xinge .xxk .ka3 li a:hover {
-  background-color: #f5f8fb;
-  color: #009af3;
-}
-
-.content-2 .xinge .xxk .ka3 li:hover .blue {
-  display: block;
-}
-
-.content-2 .xinge .xxk .ka4 {
-  display: none;
-}
-
-.content-2 .xinge .xxk .ka4 li {
-  height: 35px;
-  line-height: 35px;
-}
-
-.content-2 .xinge .xxk .ka4 li a {
-  display: block;
-  height: 35px;
-  color: #333;
-  padding: 0 10px;
-}
-
-.content-2 .xinge .xxk .ka4 li a span {
-  float: left;
-}
-
-.content-2 .xinge .xxk .ka4 li a .dujia {
-  float: left;
-  display: inline-block;
-  width: 23px;
-  height: 20px;
-  margin-top: 12px;
-  margin-left: 15px;
-  background: url(http://static.kgimg.com/public/root/images/first.png) no-repeat 0 0;
-}
-
-.content-2 .xinge .xxk .ka4 li a .bofang {
-  display: none;
-  float: right;
-  width: 12px;
-  height: 14px;
-  background: url(http://static.kgimg.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
-  background-position: 0 0;
-  margin-top: 12px;
-  margin-right: 10px;
-}
-
-.content-2 .xinge .xxk .ka4 li a .xiazai {
-  display: none;
-  float: right;
-  width: 15px;
-  height: 15px;
-  background: url(http://static.kgimg.com/common/images/pc_temp_v2/icon_splice.png?20150814) no-repeat;
-  background-position: -90px 0;
-  margin-top: 12px;
-  margin-right: 15px;
-}
-
-.content-2 .xinge .xxk .ka4 li a .time {
-  float: right;
-}
-
-.content-2 .xinge .xxk .ka4 li a:hover {
-  background-color: #f5f8fb;
-  color: #009af3;
-}
-
-.content-2 .xinge .xxk .ka4 li:hover .blue {
+.content-2 .xinge .xxk .ka2:first-child {
   display: block;
 }
 
@@ -1464,63 +887,12 @@ body {
   display: block;
 }
 
-.content-2 .MV .MV-tu .MV-tu2 {
-  position: relative;
-  float: left;
-  width: 154px;
-  height: 125px;
-  margin-right: 12px;
-}
-
-.content-2 .MV .MV-tu .MV-tu2 a {
-  display: block;
-  width: 154px;
-  height: 125px;
-}
-
-.content-2 .MV .MV-tu .MV-tu2 a img {
-  width: 100%;
-  height: 84px;
-}
-
-.content-2 .MV .MV-tu .MV-tu2 a .shadow4 {
-  display: none;
-  position: absolute;
-  top: 0;
-  width: 154px;
-  height: 84px;
-  line-height: 125px;
-  text-align: center;
-  background: rgba(0, 0, 0, 0.3);
-}
-
-.content-2 .MV .MV-tu .MV-tu2 a .shadow4 span {
-  display: inline-block;
-  width: 48px;
-  height: 48px;
-  background: url(http://static.kgimg.com/public/root/images/sprite.png) no-repeat;
-  background-position: 0 -542px;
-}
-
-.content-2 .MV .MV-tu .MV-tu2 a .MV-tu2-di p:first-child {
-  color: #444;
-  font-size: 14px;
-}
-
-.content-2 .MV .MV-tu .MV-tu2 a .MV-tu2-di p:last-child {
-  color: #888;
-  font-size: 12px;
-}
-
-.content-2 .MV .MV-tu .MV-tu2:hover .shadow4 {
-  display: block;
-}
-
 .content-2 .MV .MV-tu .MV-tu3 {
   position: relative;
   float: left;
   width: 154px;
   height: 125px;
+  margin-right: 6px;
 }
 
 .content-2 .MV .MV-tu .MV-tu3 a {
@@ -1582,7 +954,6 @@ body {
   width: 1000px;
   height: 355px;
   margin: 0 auto;
-  border: 1px solid red;
 }
 
 .content-3 .diantai {
@@ -1669,8 +1040,8 @@ body {
 .content-3 .geshou {
   float: right;
   width: 330px;
-  height: 380px;
-  border: 1px solid red;
+  height: 350px;
+  margin-top: 10px;
 }
 
 .content-3 .geshou .geshou-top {
@@ -1678,7 +1049,6 @@ body {
   height: 30px;
   line-height: 30px;
   padding-bottom: 30px;
-  border: 1px solid blue;
 }
 
 .content-3 .geshou .geshou-top img {
@@ -1699,14 +1069,17 @@ body {
 .content-3 .geshou .geshou-tu {
   width: 330px;
   height: 270px;
-  border: 1px solid red;
 }
 
-.content-3 .geshou .geshou-tu > ul {
+.content-3 .geshou .geshou-tu > ul > li {
   display: none;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul li {
+.content-3 .geshou .geshou-tu > ul > li #zhang {
+  display: none;
+}
+
+.content-3 .geshou .geshou-tu > ul > li #zhang > li {
   float: left;
   position: relative;
   width: 160px;
@@ -1714,16 +1087,16 @@ body {
   margin: 0 5px 5px 0;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul li a {
+.content-3 .geshou .geshou-tu > ul > li #zhang > li a {
   color: #fff;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul li a img {
+.content-3 .geshou .geshou-tu > ul > li #zhang > li a img {
   width: 100%;
   height: 100%;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul li a .shadow6 {
+.content-3 .geshou .geshou-tu > ul > li #zhang > li a .shadow6 {
   display: none;
   position: absolute;
   top: 0;
@@ -1732,18 +1105,18 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul li a p {
+.content-3 .geshou .geshou-tu > ul > li #zhang > li a p {
   position: absolute;
   bottom: 0;
   font-size: 14px;
   padding: 6px 8px;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul li:hover .shadow6 {
+.content-3 .geshou .geshou-tu > ul > li #zhang > li:hover .shadow6 {
   display: block;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul > .li3 {
+.content-3 .geshou .geshou-tu > ul > li #zhang .li3 {
   float: left;
   position: relative;
   width: 105px;
@@ -1751,16 +1124,16 @@ body {
   margin: 0 5px 5px 0;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul > .li3 a {
+.content-3 .geshou .geshou-tu > ul > li #zhang .li3 a {
   color: #fff;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul > .li3 a img {
+.content-3 .geshou .geshou-tu > ul > li #zhang .li3 a img {
   width: 100%;
   height: 100%;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul > .li3 a .shadow6 {
+.content-3 .geshou .geshou-tu > ul > li #zhang .li3 a .shadow6 {
   display: none;
   position: absolute;
   top: 0;
@@ -1769,14 +1142,42 @@ body {
   background: rgba(0, 0, 0, 0.3);
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul > .li3 a p {
+.content-3 .geshou .geshou-tu > ul > li #zhang .li3 a p {
   position: absolute;
   bottom: 0;
   font-size: 14px;
   padding: 6px 8px;
 }
 
-.content-3 .geshou .geshou-tu > ul > li ul > .li3:hover .shadow6 {
+.content-3 .geshou .geshou-tu > ul > li #zhang .li3:hover .shadow6 {
+  display: block;
+}
+
+.content-3 .geshou .geshou-tu > ul > li #zhang:first-child {
+  display: block;
+}
+
+.content-3 .geshou .geshou-tu > ul > li .yiru2 {
+  display: inline-block;
+  width: 330px;
+  height: 10px;
+  text-align: center;
+}
+
+.content-3 .geshou .geshou-tu > ul > li .yiru2 a {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  margin: 0 10px;
+  background-color: #ccc;
+}
+
+.content-3 .geshou .geshou-tu > ul > li .yiru2 a:hover {
+  background-color: #009af3;
+}
+
+.content-3 .geshou .geshou-tu > ul > li:first-child {
   display: block;
 }
 
@@ -1784,21 +1185,88 @@ body {
   display: block;
 }
 
-.content-3 .geshou .yiru2 {
-  width: 330px;
+.advert3 {
+  width: 1000px;
+  height: 100px;
+  margin: 40px auto;
+}
+
+.advert3 img {
+  width: 100%;
+  height: 100%;
+}
+
+.content-4 {
+  width: 1000px;
+  height: 276px;
+  margin: 0 auto;
+}
+
+.content-4 .huoban-top {
+  width: 100%;
+  height: 30px;
+  padding-bottom: 30px;
+}
+
+.content-4 .huoban-tu {
+  width: 1010px;
+}
+
+.content-4 .huoban-tu span {
+  float: left;
+  width: 130px;
+  height: 58px;
+  border: 1px dashed #ccc;
+  margin: 0 12px 12px 0;
+}
+
+.content-5 {
+  width: 1000px;
+  height: 168px;
+  margin: 30px auto;
+}
+
+.content-5 .lianjie-top {
+  width: 1000px;
+  height: 30px;
+  padding-bottom: 30px;
+}
+
+.content-5 .lianjie-zi a {
+  float: left;
+  width: 125px;
+  height: 24px;
+  line-height: 24px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.footer {
+  width: 100%;
+  height: 289px;
+  color: #b1b3b9;
+  background-color: #2c323b;
+}
+
+.footer .footer-top {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #3d424a;
+}
+
+.footer .footer-top a {
+  display: inline-block;
+  color: #b1b3b9;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.footer .footer-zi {
+  width: 100%;
+  padding-top: 50px;
   text-align: center;
 }
 
-.content-3 .geshou .yiru2 a {
-  display: inline-block;
-  width: 8px;
-  height: 8px;
-  font-size: 0;
-  border-radius: 50%;
-  margin: 0 10px;
-  background-color: #ccc;
-}
-
-.content-3 .geshou .yiru2 a:hover {
-  background-color: #009af3;
+.footer .footer-zi p {
+  line-height: 30px;
 }

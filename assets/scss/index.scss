@@ -7,7 +7,9 @@
 
 body {
     font: 13px/1.5 \5FAE\8F6F\96C5\9ED1, simsun, sans-serif;
-} //头部样式   start 
+}
+
+//头部样式   start 
 .header {
     width: 1000px;
     height: 78px;
@@ -97,7 +99,9 @@ body {
             }
         }
     }
-} // 导航栏样式  start
+}
+
+// 导航栏样式  start
 .nav {
     width: 100%;
     height: 55px;
@@ -208,7 +212,7 @@ body {
 } // 轮播图样式   start
 .lunbotu {
     position: relative;
-    width: 1270px;
+    width: 1265px;
     height: 500px;
     overflow: hidden;
     z-index: 1;
@@ -464,39 +468,6 @@ body {
                 width: 160px;
                 height: 160px;
                 margin: 0 5px 5px 0;
-
-                overflow: hidden;
-                @include tian;
-            }
-            .content-1-left-tu3 {
-                position: relative;
-                float: left;
-                top: 0;
-                width: 160px;
-                height: 160px;
-                margin: 0 5px 5px 0;
-
-                overflow: hidden;
-                @include tian;
-            }
-            .content-1-left-tu4 {
-                position: relative;
-                float: left;
-                top: 0;
-                width: 160px;
-                height: 160px;
-                margin: 0 5px 5px 0;
-                overflow: hidden;
-                @include tian;
-            }
-            .content-1-left-tu5 {
-                position: relative;
-                float: left;
-                top: 0;
-                width: 160px;
-                height: 160px;
-                margin: 0 5px 5px 0;
-
                 overflow: hidden;
                 @include tian;
             }
@@ -520,20 +491,6 @@ body {
         .content-1-right-tu {
             height: 325px;
             .content-1-right-tu1 {
-                position: relative;
-                height: 98px;
-                background-color: #f6f6f6;
-                margin-bottom: 15px;
-                @include tian1;
-            }
-            .content-1-right-tu2 {
-                position: relative;
-                height: 98px;
-                background-color: #f6f6f6;
-                margin-bottom: 15px;
-                @include tian1;
-            }
-            .content-1-right-tu3 {
                 position: relative;
                 height: 98px;
                 background-color: #f6f6f6;
@@ -607,7 +564,7 @@ body {
     }
 } // 混合4
 @mixin tian3 {
-
+    margin-right: 6px;
     a {
         display: block;
         width: 154px;
@@ -705,20 +662,12 @@ body {
 
         .xxk {
             height: 280px;
-            .ka1 {
-                @include tian2;
-            }
             .ka2 {
                 display: none;
                 @include tian2;
-            }
-            .ka3 {
-                display: none;
-                @include tian2;
-            }
-            .ka4 {
-                display: none;
-                @include tian2;
+                &:first-child {
+                    display: block;
+                }
             }
         }
 
@@ -805,14 +754,6 @@ body {
                     display: block;
                 }
             }
-            .MV-tu2 {
-                position: relative;
-                float: left;
-                width: 154px;
-                height: 125px;
-                margin-right: 12px;
-                @include tian3;
-            }
             .MV-tu3 {
                 position: relative;
                 float: left;
@@ -871,7 +812,6 @@ body {
     width: 1000px;
     height: 355px;
     margin: 0 auto;
-    border: 1px solid red;
     .diantai {
         float: left;
         width: 650px;
@@ -943,14 +883,13 @@ body {
     .geshou {
         float: right;
         width: 330px;
-        height: 380px;
-        border: 1px solid red;
+        height: 350px;
+        margin-top: 10px;
         .geshou-top {
             width: 330px;
             height: 30px;
             line-height: 30px;
             padding-bottom: 30px;
-            border: 1px solid blue;
             img {
                 float: left;
             }
@@ -968,17 +907,41 @@ body {
         .geshou-tu {
             width: 330px;
             height: 270px;
-            border: 1px solid red;
             >ul {
-                display: none;
                 >li {
-                    ul {
-                        li {
+
+                    display: none;
+                    #zhang {
+                        display: none;
+                        >li {
                             @include tian4(160px, 160px);
                         }
-                        >.li3 {
+                        .li3 {
                             @include tian4(105px, 105px);
                         }
+                        &:first-child {
+                            display: block;
+                        }
+                    }
+                    .yiru2 {
+                        display: inline-block;
+                        width: 330px;
+                        height: 10px;
+                        text-align: center; // font-size: 0;
+                        a {
+                            display: inline-block;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            margin: 0 10px;
+                            background-color: #ccc;
+                            &:hover {
+                                background-color: #009af3;
+                            }
+                        }
+                    }
+                    &:first-child {
+                        display: block;
                     }
                 }
                 &:first-child {
@@ -986,21 +949,87 @@ body {
                 }
             }
         }
-        .yiru2 {
-            width: 330px;
-            text-align: center;
-            a {
-                display: inline-block;
-                width: 8px;
-                height: 8px;
-                font-size: 0;
-                border-radius: 50%;
-                margin: 0 10px;
-                background-color: #ccc;
-                &:hover {
-                    background-color: #009af3;
-                }
-            }
+    }
+}
+
+.advert3 {
+    width: 1000px;
+    height: 100px;
+    margin: 40px auto;
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+// 主体内容4
+.content-4 {
+    width: 1000px;
+    height: 276px;
+    margin: 0 auto;
+    .huoban-top {
+        width: 100%;
+        height: 30px;
+        padding-bottom: 30px;
+    }
+    .huoban-tu {
+        width: 1010px;
+        span {
+            float: left;
+            width: 130px;
+            height: 58px;
+            border: 1px dashed #ccc;
+            margin: 0 12px 12px 0;
+        }
+    }
+}
+
+// 主体内容5
+.content-5 {
+    width: 1000px;
+    height: 168px;
+    margin: 30px auto;
+    .lianjie-top {
+        width: 1000px;
+        height: 30px;
+        padding-bottom: 30px;
+    }
+    .lianjie-zi {
+        a {
+            float: left;
+            width: 125px;
+            height: 24px;
+            line-height: 24px;
+            color: #555;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+// 底部
+.footer {
+    width: 100%;
+    height: 289px;
+    color: #b1b3b9;
+
+    background-color: #2c323b;
+    .footer-top {
+        width: 100%;
+        text-align: center;
+        border-bottom: 1px solid #3d424a;
+        a {
+            display: inline-block;
+            color: #b1b3b9;
+            font-size: 12px;
+            padding: 10px;
+        }
+    }
+    .footer-zi {
+        width: 100%;
+        padding-top: 50px;
+        text-align: center;
+        p {
+            line-height: 30px;
         }
     }
 }

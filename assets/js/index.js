@@ -41,11 +41,18 @@ $(function() {
         index2 = $(this).index();
         $('.xxk ul').eq(index2).css('display', 'block');
     })
-
+    var index3 = 0;
+    $('.content-3 .geshou .geshou-tu > ul > li').eq(0).children().eq(0).css('display', 'block');
     $('.yiru1 li').mouseover(function() {
-        $('.geshou-tu>li').css('display', 'none');
-        var index3 = $(this).index();
-        $('.geshou-tu>li').eq(index3).css('display', 'block');
+        $('.content-3 .geshou .geshou-tu > ul > li').css('display', 'none');
+        index3 = $(this).index();
+        $('.content-3 .geshou .geshou-tu > ul > li').eq(index3).css('display', 'block');
+        $('.yiru2 a').mouseover(function() {
+            $('.content-3 .geshou .geshou-tu > ul > li').eq(index3).children('ul').css('display', 'none');
+            var index4 = $(this).index();
+            $('.content-3 .geshou .geshou-tu > ul > li').eq(index3).children('ul').eq(index4).css('display', 'block');
+
+        })
     })
 
     function lun(cb) {

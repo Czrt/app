@@ -1,0 +1,338 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+body {
+  font: 12px/1.5 Tahoma, Arial, '\5b8b\4f53', sans-serif;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header-top {
+  width: 960px;
+  height: 40px;
+  line-height: 40px;
+  margin: 0 auto;
+}
+
+.header-top ul {
+  float: right;
+  font-size: 14px;
+  color: #0c85cc;
+}
+
+.header-top ul a {
+  color: #0c85cc;
+}
+
+.header-top ul a:hover {
+  text-decoration: underline;
+}
+
+.header-top ul li {
+  display: inline-block;
+  padding: 0 5px;
+}
+
+.header-top ul span {
+  position: relative;
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
+  margin-left: 5px;
+  background: url(http://www.kugou.com/common/images/header_bg.png) no-repeat;
+  background-position: 0px -310px;
+}
+
+.header-top ul span .gouwu {
+  display: none;
+  color: #333;
+  position: absolute;
+  top: 30px;
+  left: -280px;
+  width: 300px;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+.header-top ul span .gouwu i {
+  position: absolute;
+  top: -20px;
+  right: 0;
+  display: inline-block;
+  width: 0;
+  height: 10px;
+  border-bottom: 10px solid #f1f1f1;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+}
+
+.header-top ul span:hover .gouwu {
+  display: block;
+}
+
+.header-di {
+  width: 100%;
+  height: 60px;
+  background-color: #008ad4;
+}
+
+.header-di .nav {
+  width: 960px;
+  height: 60px;
+  line-height: 60px;
+  margin: 0 auto;
+}
+
+.header-di .nav h1 {
+  float: left;
+  margin-top: 10px;
+}
+
+.header-di .nav li {
+  display: inline-block;
+  font-family: Microsoft YaHei;
+}
+
+.header-di .nav li a {
+  display: inline-block;
+  height: 60px;
+  line-height: 60px;
+  text-align: center;
+  padding: 0 11px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.header-di .nav .nav-left {
+  float: left;
+  margin-left: 10px;
+}
+
+.header-di .nav .nav-right {
+  float: right;
+}
+
+.container {
+  width: 960px;
+  height: 550px;
+  margin: 0 auto;
+  margin-top: 40px;
+  border-top: 5px solid #54ade7;
+  border-bottom: 1px solid #54ade7;
+  border-left: 1px solid #54ade7;
+  border-right: 1px solid #54ade7;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.container .reg .reg-top {
+  width: 100%;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  margin-top: 40px;
+}
+
+.container .reg .reg-top span {
+  display: inline-block;
+  width: 127px;
+  height: 27px;
+  background: url(http://www.kugou.com/reg/static/images/web/kg_lgn_splice.png?201401181524) no-repeat;
+  background-position: -350px -50px;
+}
+
+.container .reg .reg-content {
+  font-size: 14px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.container .reg .reg-content p {
+  padding-bottom: 15px;
+}
+
+.container .reg .reg-content .haoma {
+  position: relative;
+}
+
+.container .reg .reg-content .haoma input {
+  display: inline-block;
+  width: 275px;
+  height: 22px;
+  padding: 7px;
+  color: #7b7b7b;
+  line-height: 22px;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+}
+
+.container .reg .reg-content .haoma span {
+  position: absolute;
+  right: 200px;
+  font-size: 0;
+}
+
+.container .reg .reg-content .duanxin {
+  margin-left: -74px;
+}
+
+.container .reg .reg-content .duanxin input {
+  width: 120px;
+  height: 22px;
+  line-height: 22px;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+  outline: none;
+  padding: 7px;
+  color: #7b7b7b;
+}
+
+.container .reg .reg-content .duanxin a {
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  color: #fff;
+  padding: 0 10px;
+  background: #bbb;
+  margin-left: 10px;
+  font-size: 12px;
+  font-famliy: Microsoft Yahei, simsun, sans-serif;
+}
+
+.container .reg .reg-content .mima {
+  position: relative;
+  padding-left: 32px;
+}
+
+.container .reg .reg-content .mima input {
+  width: 275px;
+  height: 22px;
+  padding: 7px;
+  line-height: 22px;
+  color: #7b7b7b;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+}
+
+.container .reg .reg-content .mima span {
+  position: absolute;
+  right: 30px;
+  font-size: 0;
+}
+
+.container .reg .reg-content .mima:hover span {
+  font-size: 14px;
+}
+
+.container .reg .reg-content .qiangdu {
+  margin-left: 50px;
+  color: #7b7b7b;
+  font-size: 12px;
+}
+
+.container .reg .reg-content .qiangdu a {
+  display: inline-block;
+  width: 169px;
+  height: 12px;
+  margin: 0 3px;
+  background-color: #e0e0e0;
+}
+
+.container .reg .reg-content .queren {
+  position: relative;
+}
+
+.container .reg .reg-content .queren input {
+  width: 275px;
+  height: 22px;
+  padding: 7px;
+  line-height: 22px;
+  color: #7b7b7b;
+  outline: none;
+  border: 1px solid #ccc;
+  background-color: #f3f3f3;
+}
+
+.container .reg .reg-content .queren span {
+  position: absolute;
+  right: 200px;
+  font-size: 0;
+}
+
+.container .reg .reg-content .queren:hover span {
+  font-size: 14px;
+}
+
+.container .reg .reg-content .sex {
+  margin-left: -145px;
+}
+
+.container .reg .reg-content .sex input {
+  margin-left: 12px;
+}
+
+.container .reg .reg-content .xieyi {
+  margin-left: 120px;
+}
+
+.container .reg .reg-content .xieyi a {
+  text-decoration: underline;
+  color: #54ade7;
+}
+
+.container .reg .reg-content .zhuce {
+  margin-left: -70px;
+}
+
+.container .reg .reg-content .zhuce input {
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
+  background: #3db9ec;
+  padding: 0 25px;
+  font-size: 21px;
+  color: #fff;
+  border: 0;
+  border-radius: 2px;
+  font-family: Microsoft Yahei, simsun, sans-serif;
+}
+
+.footer {
+  width: 100%;
+  height: 289px;
+  color: #b1b3b9;
+  background-color: #2c323b;
+  margin-top: 30px;
+}
+
+.footer .footer-top {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #3d424a;
+}
+
+.footer .footer-top a {
+  display: inline-block;
+  color: #b1b3b9;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.footer .footer-zi {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.footer .footer-zi p {
+  line-height: 30px;
+}

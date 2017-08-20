@@ -9,6 +9,126 @@ body {
   font: 13px/1.5 \5FAE\8F6F\96C5\9ED1, simsun, sans-serif;
 }
 
+input {
+  outline: none;
+}
+
+.shadow {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 1060px;
+  line-height: 1060px;
+  background-color: rgba(0, 0, 0, 0.3);
+  z-index: 99;
+}
+
+.shadow .login {
+  position: relative;
+  top: 20%;
+  height: 316px;
+  color: #333;
+  margin: 0 auto;
+  padding: 30px 35px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  font: 12px/1.5 "Microsoft YaHei", Tahoma, Arial, "b8bf53", sans-serif;
+}
+
+.shadow .login h4 {
+  width: 140px;
+  font-size: 22px;
+  font-weight: 400;
+}
+
+.shadow .login .login-zhu {
+  margin-top: 30px;
+}
+
+.shadow .login .login-zhu .login-zhu-1 {
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+  padding: 7px 10px;
+  margin: 10px 0;
+}
+
+.shadow .login .login-zhu .login-zhu-1 input {
+  width: 310px;
+  height: 22px;
+  color: #a1a1a1;
+  border: 0;
+  line-height: 22px;
+  background: transparent;
+}
+
+.shadow .login .login-zhu .login-zhu-2 {
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+  padding: 7px 10px;
+  margin: 10px 0;
+}
+
+.shadow .login .login-zhu .login-zhu-2 input {
+  width: 260px;
+  height: 22px;
+  color: #a1a1a1;
+  border: 0;
+  line-height: 22px;
+  background: transparent;
+}
+
+.shadow .login .login-zhu .login-zhu-3 a {
+  float: right;
+}
+
+.shadow .login .login-zhu .login-zhu-4 {
+  margin: 30px 0;
+}
+
+.shadow .login .login-zhu .login-zhu-4 input {
+  display: inline-block;
+  width: 368px;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 4px;
+  border: 0;
+  background-color: #2299ed;
+}
+
+.shadow .login .login-zhu .login-zhu-5 .login-zhu-5-left {
+  float: left;
+}
+
+.shadow .login .login-zhu .login-zhu-5 .login-zhu-5-left a {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(http://static.kugou.com/common/images/login/kg_popup_splice01.png?201409201440) no-repeat;
+}
+
+.shadow .login .login-zhu .login-zhu-5 .login-zhu-5-left a:first-child {
+  background-position: -25px -125px;
+}
+
+.shadow .login .login-zhu .login-zhu-5 .login-zhu-5-left a:last-child {
+  background-position: -125px -125px;
+}
+
+.shadow .login .login-zhu .login-zhu-5 .login-zhu-5-right {
+  float: right;
+}
+
+.shadow .login > a {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 14px;
+  height: 13px;
+  background: url(http://www.kugou.com/newuc/static/images/kg_popup_splice01.png?201403141136) no-repeat;
+  background-position: -175px -100px;
+}
+
 .header {
   width: 1000px;
   height: 78px;
@@ -41,7 +161,6 @@ body {
   line-height: 24px;
   padding: 5px 0;
   color: #666;
-  outline: none;
   border: 0;
   padding-left: 10px;
 }
@@ -139,11 +258,6 @@ body {
   color: #ddd;
   padding: 0 38px;
   line-height: 55px;
-}
-
-.nav .nav-l .nav-left > li:first-child {
-  background-color: #0c8ed9;
-  color: #fff;
 }
 
 .nav .nav-l .nav-left > li:last-child > a {
@@ -246,4 +360,274 @@ body {
 
 .nav .nav-l .nav-right li:last-child a:hover {
   background-position: 0 -245px;
+}
+
+.active {
+  background: #3399ff;
+  color: #ffffff;
+  border-left: 1px solid #dadada;
+}
+
+a {
+  color: #333;
+}
+
+.container {
+  width: 1025px;
+  height: 600px;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+.container .nav2 {
+  width: 1008px;
+  height: 40px;
+  margin: 20px 0;
+}
+
+.container .nav2 a {
+  float: left;
+  width: 250px;
+  height: 40px;
+  font-size: 14px;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #dadada;
+}
+
+.container .nav2 a:hover {
+  border-left: 1px solid #dadada;
+  background: #3399ff;
+  color: #ffffff;
+}
+
+.container .content ul li {
+  color: #666;
+  margin: 7px 0;
+}
+
+.container .content ul li span {
+  display: inline-block;
+  width: 100px;
+  text-align: right;
+  font-weight: 700;
+}
+
+.container .content ul .pingtai a {
+  display: inline-block;
+  padding: 4px 20px;
+  font-size: 13px;
+  color: #777;
+  border: 1px solid #666;
+  margin-right: 13px;
+}
+
+.container .content ul .pingtai a:nth-child(2) {
+  border: 1px solid #80dbff;
+  font-weight: 600;
+}
+
+.container .content ul .pingtai a:hover {
+  border: 1px solid #80dbff;
+}
+
+.container .content ul .xiezai {
+  position: relative;
+  padding-left: 100px;
+  font-size: 12px;
+}
+
+.container .content ul .xiezai img {
+  margin-right: 10px;
+}
+
+.container .content ul .xiezai div {
+  display: none;
+  position: absolute;
+  top: 0;
+  right: 6px;
+  width: 420px;
+  height: 444px;
+  padding: 0;
+  background: url(http://www.kugou.com/shop/static/images/dialog.png) no-repeat;
+}
+
+.container .content ul .xiezai a {
+  color: #1579e9;
+}
+
+.container .content ul .fankui span {
+  float: left;
+}
+
+.container .content ul .fankui textarea {
+  display: inline-block;
+  width: 600px;
+  border: 1px solid #666666;
+  padding: 5px;
+  font-size: 12px;
+  color: silver;
+  resize: vertical;
+}
+
+.container .content ul .wenjian a {
+  position: relative;
+  display: inline-block;
+  font-size: 13px;
+  color: #777;
+  width: 80px;
+  height: 32px;
+  border: 1px solid #666;
+  text-align: center;
+  line-height: 32px;
+}
+
+.container .content ul .wenjian a input {
+  position: absolute;
+  opacity: 0;
+}
+
+.container .content ul .zhanghao input {
+  width: 132px;
+  height: 22px;
+  line-height: 22px;
+  text-indent: 4px;
+  padding-top: 3px;
+  border: 1px solid #666;
+}
+
+.container .content ul .lianxi input {
+  width: 132px;
+  height: 22px;
+  line-height: 22px;
+  text-indent: 4px;
+  padding-top: 3px;
+  color: silver;
+}
+
+.container .content ul .lianxi b {
+  font-weight: 400;
+  color: silver;
+}
+
+.container .content ul .fasong {
+  padding-left: 100px;
+}
+
+.container .content ul .fasong a {
+  display: inline-block;
+  color: #777;
+  border: 1px solid #666;
+  font-size: 13px;
+  padding: 4px 20px;
+}
+
+.container .content div {
+  color: #666;
+  padding-left: 100px;
+}
+
+.container .content2 {
+  display: none;
+  width: 1021px;
+}
+
+.container .content2 h3 {
+  height: 46px;
+  line-height: 46px;
+  color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  text-indent: 22px;
+  border: 1px solid #ccc;
+  border-bottom: 0;
+}
+
+.container .content2 ul li {
+  float: left;
+  width: 254px;
+  height: 282px;
+  text-align: center;
+  line-height: 100%;
+  border: 1px solid #dadada;
+  border-right: 0;
+}
+
+.container .content2 ul li img {
+  margin-top: 76px;
+}
+
+.container .content2 ul li div {
+  height: 30px;
+  line-height: 30px;
+  margin: 5px 0;
+}
+
+.container .content2 ul li div a {
+  padding: 5px 10px;
+  color: #fff;
+  font-size: 14px;
+  background-color: #008ad4;
+  border-radius: 5px;
+}
+
+.container .content2 ul li p {
+  height: 20px;
+  font-size: 14px;
+  color: #999999;
+}
+
+.container .content2 ul li:nth-child(2) img {
+  margin-bottom: 39px;
+}
+
+.container .content2 ul li:nth-child(3) h2 {
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+}
+
+.container .content2 ul li:nth-child(4) {
+  border-right: 1px solid #dadada;
+}
+
+.container .content2 ul li:nth-child(4) h2 {
+  height: 42px;
+  line-height: 42px;
+  font-size: 18px;
+  color: #333;
+  font-weight: normal;
+}
+
+.footer {
+  width: 100%;
+  height: 289px;
+  color: #b1b3b9;
+  background-color: #2c323b;
+  margin-top: 30px;
+}
+
+.footer .footer-top {
+  width: 100%;
+  text-align: center;
+  border-bottom: 1px solid #3d424a;
+}
+
+.footer .footer-top a {
+  display: inline-block;
+  color: #b1b3b9;
+  font-size: 12px;
+  padding: 10px;
+}
+
+.footer .footer-zi {
+  width: 100%;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.footer .footer-zi p {
+  line-height: 30px;
 }

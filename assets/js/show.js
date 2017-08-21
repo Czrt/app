@@ -35,5 +35,10 @@ $(function() {
 
         }
     })
+    document.body.onmousewheel = function(event) {
+        event = event || window.event;
+        console.log(event.path);
+        console.dir(event.path);
+    }
 
 })

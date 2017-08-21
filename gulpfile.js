@@ -9,7 +9,7 @@ gulp.task('server', function() {
     browserSync.init({
         // 设置服务器所有文件的起始路径
         server: "./",
-        index: "./list.html"
+        index: "./song.html"
     });
 
     // 在['scss']这里的含义：先执行完成scss编译任务，在执行浏览器刷新

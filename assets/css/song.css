@@ -1,0 +1,363 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header {
+  width: 1000px;
+  height: 78px;
+  line-height: 78px;
+  margin: 0 auto;
+}
+
+.header .header-left {
+  float: left;
+}
+
+.header .header-left h1 {
+  float: left;
+}
+
+.header .header-left .search {
+  position: relative;
+  float: right;
+}
+
+.header .header-left .search input {
+  width: 230px;
+  height: 30px;
+  outline: none;
+  padding: 0 10px;
+  margin-left: 50px;
+}
+
+.header .header-left .search a {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+}
+
+.header .header-right {
+  float: right;
+  font-size: 14px;
+  color: #ccc;
+}
+
+.header .header-right ul {
+  float: left;
+}
+
+.header .header-right ul li {
+  float: left;
+  padding: 0 15px;
+}
+
+.header .header-right ul li a {
+  color: #777;
+}
+
+.header .header-right .login {
+  float: right;
+  margin-left: 20px;
+}
+
+.header .header-right .login a {
+  display: inline-block;
+  width: 48px;
+  height: 28px;
+  color: #333;
+  line-height: 28px;
+  text-align: center;
+  border: 1px solid #333;
+  margin: 0 5px;
+  border-radius: 2px;
+}
+
+.header .header-right .login a:first-child {
+  color: #fff;
+  border: 1px solid #158fe1;
+  background-color: #158fe1;
+}
+
+.header .header-right .login a:last-child {
+  border: 1px solid #dbdbdb;
+}
+
+.nav {
+  width: 100%;
+  height: 55px;
+  background-color: #2c323b;
+}
+
+.nav .nav-l {
+  width: 1000px;
+  height: 55px;
+  line-height: 55px;
+  margin: 0 auto;
+}
+
+.nav .nav-l .nav-left {
+  position: relative;
+  float: left;
+  font-size: 16px;
+}
+
+.nav .nav-l .nav-left > li {
+  display: inline-block;
+  height: 55px;
+}
+
+.nav .nav-l .nav-left > li a {
+  color: #ddd;
+  padding: 0 20px;
+}
+
+.nav .nav-l .nav-left > li:last-child > a {
+  color: #ddd;
+  padding: 0 38px;
+  background: url(http://static.kgimg.com/public/root/images/arrowMored.png) no-repeat no-repeat 80px;
+}
+
+.nav .nav-l .nav-left > li:last-child .gengduo {
+  display: none;
+  position: absolute;
+  background-color: #252a32;
+}
+
+.nav .nav-l .nav-left > li:last-child .gengduo li {
+  text-align: center;
+  width: 108px;
+  height: 36px;
+  line-height: 36px;
+}
+
+.nav .nav-l .nav-left > li:last-child:hover .gengduo {
+  display: block;
+}
+
+.nav .nav-l .nav-left > li:last-child:hover > a {
+  background: url(http://static.kgimg.com/public/root/images/arrowMoreu.png) no-repeat no-repeat 80px;
+}
+
+.nav .nav-l .nav-left > li:hover {
+  background-color: #0c8ed9;
+  color: #fff;
+}
+
+.nav .nav-l .nav-right {
+  float: right;
+}
+
+.nav .nav-l .nav-right li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.nav .nav-l .nav-right li a {
+  color: #bbb;
+  font-size: 13px;
+  padding-left: 20px;
+  background: url(http://static.kgimg.com/public/root/images/sprite.png);
+}
+
+.nav .nav-l .nav-right li a:hover {
+  color: #14a9ff;
+}
+
+.nav .nav-l .nav-right li:first-child a {
+  background-position: 0 -119px;
+}
+
+.nav .nav-l .nav-right li:first-child a:hover {
+  background-position: 0 -101px;
+}
+
+.nav .nav-l .nav-right li:nth-child(2) a {
+  background-position: 0 -155px;
+}
+
+.nav .nav-l .nav-right li:nth-child(2) a:hover {
+  background-position: 0 -137px;
+}
+
+.nav .nav-l .nav-right li:nth-child(3) a {
+  background-position: 0 -191px;
+}
+
+.nav .nav-l .nav-right li:nth-child(3) a:hover {
+  background-position: 0 -173px;
+}
+
+.nav .nav-l .nav-right li:nth-child(4) a {
+  background-position: 0 -226px;
+}
+
+.nav .nav-l .nav-right li:nth-child(4) a:hover {
+  background-position: 0 -208px;
+}
+
+.nav .nav-l .nav-right li:last-child a {
+  background-position: 0 -281px;
+}
+
+.nav .nav-l .nav-right li:last-child a:hover {
+  background-position: 0 -245px;
+}
+
+.controls {
+  position: fixed;
+  bottom: 0;
+  min-width: 940px;
+  height: 80px;
+  background-color: #000;
+  opacity: .3;
+}
+
+.controls .controls-left {
+  float: left;
+  width: 160px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.controls .controls-left a {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  vertical-align: middle;
+  background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+}
+
+.controls .controls-left a:first-child {
+  background-position: 0 -143px;
+}
+
+.controls .controls-left a:nth-child(2) {
+  width: 60px;
+  height: 60px;
+}
+
+.controls .controls-left a:nth-child(3) {
+  background-position: -144px -143px;
+}
+
+.controls img {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin-top: 10px;
+}
+
+.controls .controls-bar {
+  float: left;
+  width: 370px;
+  height: 80px;
+  border: 1px solid red;
+}
+
+.controls .controls-bar .songer {
+  color: #c4c3c3;
+  width: 370px;
+  height: 34px;
+  font-family: Microsoft Yahei, '\5b8b\4f53', Arial, Verdana;
+  font-size: 13px;
+  padding-top: 18px;
+}
+
+.controls .controls-bar .songer .time {
+  float: right;
+  color: #fff;
+  font-size: 12px;
+  font-family: Tahoma, Arial, Verdana;
+}
+
+.controls .controls-bar .songer .time i {
+  font-style: normal;
+}
+
+.controls .controls-bar .bar {
+  position: relative;
+  width: 371px;
+  height: 3px;
+  background-color: #ddd;
+}
+
+.controls .controls-bar .bar .tiao {
+  width: 0px;
+  height: 3px;
+  background-color: #4285f4;
+}
+
+.controls .controls-bar .bar .qiu {
+  position: absolute;
+  top: -5px;
+  left: -6px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+
+.controls .controls-right {
+  float: left;
+  width: 260px;
+  height: 80px;
+  border: 1px solid red;
+}
+
+.controls .controls-right .song {
+  position: relative;
+}
+
+.controls .controls-right .song span {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+}
+
+.controls .controls-right .song span:hover {
+  background-position: -80px -195px;
+}
+
+.controls .controls-right .song .song-1 .song-bar {
+  position: absolute;
+  top: -100px;
+  width: 3px;
+  height: 86px;
+  background-color: #51555c;
+}
+
+.controls .controls-right .song .song-1 .song-bar .song-bar-tiao {
+  width: 3px;
+  height: 5px;
+  background-color: red;
+}
+
+.controls .controls-right .song .song-1 .song-bar .song-bar-qiu {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: blue;
+}
+
+.controls .controls-left .active {
+  background-position: -60px 0;
+}
+
+.controls .controls-left .active1 {
+  background-position: 0 -60px;
+}
+
+.controls .controls-right .song .active2 {
+  background-position: -64px -195px;
+}
+
+.controls .controls-right .song .active3 {
+  background-position: -128px -195px;
+}

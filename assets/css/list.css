@@ -251,6 +251,7 @@
 }
 
 .container .container-left {
+  float: left;
   position: relative;
   width: 663px;
   height: 325px;
@@ -296,6 +297,10 @@
   background: url(http://www.kugou.com/mvweb/common/images/play.png) no-repeat;
 }
 
+.container .container-left ul li span:hover a {
+  text-decoration: underline;
+}
+
 .container .container-left ol {
   position: absolute;
   bottom: 5px;
@@ -310,6 +315,165 @@
   margin: 0 4px;
 }
 
+.container .container-right {
+  width: 317px;
+  height: 325px;
+  float: right;
+  border: 1px solid red;
+}
+
+.container .container-right h3 {
+  height: 30px;
+  line-height: 30px;
+  font-size: 14px;
+  color: #fff;
+}
+
+.container .container-right h3 span {
+  float: left;
+  width: 219px;
+  background-color: #deb200;
+  font-weight: 400;
+  padding-left: 14px;
+}
+
+.container .container-right h3 a {
+  float: left;
+  width: 82px;
+  color: #fff;
+  background-color: #363636;
+  text-align: center;
+  margin-left: 2px;
+}
+
+.container .container-right ul {
+  height: 293px;
+  background-color: #363636;
+  margin-top: 5px;
+}
+
+.container .container-right ul li {
+  height: 29px;
+  line-height: 32px;
+}
+
+.container .container-right ul li a {
+  display: block;
+  height: 29px;
+}
+
+.container .container-right ul li a i {
+  float: left;
+  width: 37px;
+  height: 29px;
+  background: url(http://www.kugou.com/mvweb/common/images/bg.png) no-repeat;
+}
+
+.container .container-right ul li a span {
+  float: left;
+  width: 220px;
+  height: 29px;
+  line-height: 32px;
+  color: #fff;
+  font-size: 12px;
+}
+
+.container .container-right ul li a em {
+  display: none;
+  margin-top: 7px;
+  width: 18px;
+  height: 18px;
+  background: url(http://www.kugou.com/mvweb/common/images/play.png) no-repeat;
+}
+
+.container .container-right ul li a:hover {
+  background: #959595;
+}
+
+.container .container-right ul li a:hover em {
+  display: inline-block;
+}
+
+.container .container-right ul li:first-child a i {
+  background-position: -336px -218px;
+}
+
+.container .container-right ul li:first-child a:hover i {
+  background-position: -296px -218px;
+}
+
+.container .container-right ul li:nth-child(2) a i {
+  background-position: -336px -247px;
+}
+
+.container .container-right ul li:nth-child(2) a:hover i {
+  background-position: -296px -247px;
+}
+
+.container .container-right ul li:nth-child(3) a i {
+  background-position: -336px -276px;
+}
+
+.container .container-right ul li:nth-child(3) a:hover i {
+  background-position: -296px -276px;
+}
+
+.container .container-right ul li:nth-child(4) a i {
+  background-position: -336px -305px;
+}
+
+.container .container-right ul li:nth-child(4) a:hover i {
+  background-position: -296px -305px;
+}
+
+.container .container-right ul li:nth-child(5) a i {
+  background-position: -336px -334px;
+}
+
+.container .container-right ul li:nth-child(5) a:hover i {
+  background-position: -296px -334px;
+}
+
+.container .container-right ul li:nth-child(6) a i {
+  background-position: -336px -363px;
+}
+
+.container .container-right ul li:nth-child(6) a:hover i {
+  background-position: -296px -363px;
+}
+
+.container .container-right ul li:nth-child(7) a i {
+  background-position: -336px -392px;
+}
+
+.container .container-right ul li:nth-child(7) a:hover i {
+  background-position: -296px -392px;
+}
+
+.container .container-right ul li:nth-child(8) a i {
+  background-position: -336px -421px;
+}
+
+.container .container-right ul li:nth-child(8) a:hover i {
+  background-position: -296px -421px;
+}
+
+.container .container-right ul li:nth-child(9) a i {
+  background-position: -336px -450px;
+}
+
+.container .container-right ul li:nth-child(9) a:hover i {
+  background-position: -296px -450px;
+}
+
+.container .container-right ul li:nth-child(10) a i {
+  background-position: -336px -479px;
+}
+
+.container .container-right ul li:nth-child(10) a:hover i {
+  background-position: -296px -479px;
+}
+
 a {
   text-decoration: none;
 }
@@ -320,4 +484,14 @@ a {
 
 .lol .active {
   background-color: #85d4f3;
+}
+
+.content {
+  width: 1000px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+
+.content .content-left {
+  width: 210px;
 }

@@ -8,8 +8,10 @@ a {
     text-decoration: none;
 }
 
+
 // 头部
 .header {
+    position: relative;
     width: 1000px;
     height: 78px;
     line-height: 78px;
@@ -79,9 +81,11 @@ a {
 
 // nav
 .nav {
+    position: relative;
     width: 100%;
     height: 55px;
     background-color: #2c323b;
+    z-index: 10;
     .nav-l {
         width: 1000px;
         height: 55px;
@@ -178,137 +182,381 @@ a {
     }
 }
 
+.container {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    background: url(http://singerimg.kugou.com/uploadpic/softhead/400/20150729/20150729150831166970.jpg) no-repeat;
+    background-size: cover;
+    opacity: .6;
+    z-index: 9;
+    .shadow {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        opacity: .9;
+        z-index: 10;
+    }
+    .shadow1 {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, .3);
+        opacity: .6;
+        z-index: 11;
+    }
+    .content {
+        position: absolute;
+        left: 50%;
+        width: 840px;
+        height: 450px;
+        margin-left: -390px;
+        z-index: 12;
+        .content-left {
+            width: 262px;
+            float: left;
+            img {
+                width: 260px;
+                height: 260px;
+                margin-top: 10px;
+                opacity: 1;
+            }
+            a {
+                display: block;
+                width: 230px;
+                height: 50px;
+                background: url(http://www.kugou.com/yy/static/images/play/downlaod_bg.png) no-repeat;
+                margin-top: 30px;
+                margin-left: 15px;
+                &:hover {
+                    background-position: -231px 0;
+                }
+            }
+        }
+        .content-right {
+            width: 460px;
+            min-height: 500px;
+            float: right;
+            >p {
+                margin-top: 10px;
+                float: left;
+                width: 460px;
+                color: #fff;
+                font-size: 24px;
+                &:nth-child(2) {
+                    font-size: 15px;
+                    color: #fff;
+                    span {
+                        opacity: .6;
+                    }
+                    margin-bottom:30px;
+                }
+            }
+            .geci {
+                position: relative;
+                width: 460px;
+                height: 300px;
+                overflow: hidden;
+                .geci-zhu {
+                    width: 480px;
+                    height: 100%;
+                    color: #ccc;
+                    overflow-y: scroll;
+                    p {
+                        width: 420px;
+                        height: 34px;
+                        line-height: 34px;
+                        font-size: 15px;
+                    }
+                }
+                .gun {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    width: 8px;
+                    height: 30px;
+                    border-radius: 4px;
+                    background-color: #fff;
+                    opacity: .2;
+                }
+            }
+        }
+    }
+}
+
 .controls {
     position: fixed;
     bottom: 0;
-    min-width: 940px;
+    width: 100%;
     height: 80px;
     background-color: #000;
-    opacity: .3;
-    .controls-left {
-        float: left;
-        width: 160px;
+    opacity: .6;
+    z-index: 9999;
+    box-shadow: 0 -10px 20px #403f3f;
+    transition: bottom 0.6s linear;
+    .controls-zhu {
+        width: 960px;
         height: 80px;
-        line-height: 80px;
-        a {
-            display: inline-block;
-            width: 36px;
-            height: 36px;
-            vertical-align: middle;
-            background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
-            &:first-child {
-                background-position: 0 -143px;
-            }
-            &:nth-child(2) {
-                width: 60px;
-                height: 60px;
-            }
-            &:nth-child(3) {
-                background-position: -144px -143px;
-            }
-        }
-    }
-    img {
-        float: left;
-        width: 60px;
-        height: 60px;
-        margin-top: 10px;
-    }
-    .controls-bar {
-        float: left;
-        width: 370px;
-        height: 80px;
-        border: 1px solid red;
-        .songer {
-            color: #c4c3c3;
-            width: 370px;
-            height: 34px;
-            font-family: Microsoft Yahei, '\5b8b\4f53', Arial, Verdana;
-            font-size: 13px;
-            padding-top: 18px;
-            .time {
-                float: right;
-                color: #fff;
-                font-size: 12px;
-                font-family: Tahoma, Arial, Verdana;
-                i {
-                    font-style: normal;
-                }
-            }
-        }
-        .bar {
-            position: relative;
-            width: 371px;
-            height: 3px;
-            background-color: #ddd;
-            .tiao {
-                width: 0px;
-                height: 3px;
-                background-color: #4285f4;
-            }
-            .qiu {
-                position: absolute;
-                top: -5px;
-                left: -6px;
-                width: 12px;
-                height: 12px;
-                border-radius: 50%;
-                background-color: #fff;
-            }
-        }
-    }
-    .controls-right {
-        float: left;
-        width: 260px;
-        height: 80px;
-        border: 1px solid red;
-        .song {
-            position: relative;
-            span {
+        margin: 0 auto;
+        .controls-left {
+            float: left;
+            width: 160px;
+            height: 80px;
+            line-height: 80px;
+            a {
                 display: inline-block;
-                width: 16px;
-                height: 16px;
+                width: 36px;
+                height: 36px;
+                vertical-align: middle;
                 background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
-                &:hover {
-                    background-position: -80px -195px;
+                &:first-child {
+                    background-position: 0 -143px;
+                }
+                &:nth-child(2) {
+                    width: 60px;
+                    height: 60px;
+                }
+                &:nth-child(3) {
+                    background-position: -144px -143px;
                 }
             }
-            .song-1 {
-                .song-bar {
+        }
+        img {
+            float: left;
+            width: 60px;
+            height: 60px;
+            margin-top: 10px;
+        }
+        .controls-bar {
+            float: left;
+            width: 370px;
+            height: 80px;
+            margin-left: 10px;
+            .songer {
+                color: #c4c3c3;
+                width: 370px;
+                height: 34px;
+                font-family: Microsoft Yahei, '\5b8b\4f53', Arial, Verdana;
+                font-size: 13px;
+                padding-top: 18px;
+                .time {
+                    float: right;
+                    color: #fff;
+                    font-size: 12px;
+                    font-family: Tahoma, Arial, Verdana;
+                    i {
+                        font-style: normal;
+                    }
+                }
+            }
+            .bar {
+                position: relative;
+                width: 370px;
+                height: 3px;
+                background-color: #ddd;
+                .tiao {
+                    width: 0px;
+                    height: 3px;
+                    background-color: #4285f4;
+                }
+                .qiu {
+                    position: absolute;
+                    top: -5px;
+                    left: 0;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background-color: #fff;
+                }
+            }
+        }
+        .controls-right {
+            float: left;
+            width: 260px;
+            height: 80px;
+            line-height: 80px;
+            margin-left: 30px;
+            .song {
+                position: relative;
+                float: left;
+                margin-right: 30px;
+                span {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+                    &:hover {
+                        background-position: -80px -195px;
+                    }
+                }
+                .song-1 {
+                    display: none;
                     position: absolute;
                     top: -100px;
-                    width: 3px;
-                    height: 86px;
-                    background-color: #51555c;
-                    .song-bar-tiao {
+                    left: -5px;
+                    width: 25px;
+                    height: 100px;
+                    border: 1px solid red;
+                    background-color: #000;
+                    z-index: 99999;
+                    .song-bar {
+                        position: absolute;
+                        top: 10px;
+                        left: 11px;
                         width: 3px;
-                        height: 5px;
-                        background-color: red;
-                    }
-                    .song-bar-qiu {
-                        width: 6px;
-                        height: 6px;
-                        border-radius: 50%;
-                        background-color: blue;
+                        height: 86px;
+                        background-color: #51555c;
+                        .song-bar-tiao {
+                            position: absolute;
+                            bottom: 0;
+                            width: 3px;
+                            height: 43px;
+                            background-color: red;
+                        }
+                        .song-bar-qiu {
+                            position: absolute;
+                            bottom: 43px;
+                            left: -2px;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background-color: blue;
+                        }
                     }
                 }
             }
+            .xunhuan {
+                position: relative;
+                float: left;
+                margin-right: 30px;
+
+                >a {
+                    display: inline-block;
+                    width: 16px;
+                    height: 16px;
+                    background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+                    background-position: -64px -179px;
+                }
+                ul {
+                    display: none;
+                    position: absolute;
+                    top: -100px;
+                    height: 95px;
+                    background: url(http://www.kugou.com/yy/static/images/play/play_style.png) no-repeat;
+                    li {
+                        width: 100px;
+                        height: 30px;
+                        font-size: 14px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-bottom: 1px solid #30343d;
+                        a {
+                            color: #fff;
+                        }
+                        span {
+                            display: inline-block;
+                            width: 16px;
+                            height: 16px;
+                            vertical-align: middle;
+                            margin-right: 10px;
+                            background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+                            background-position: -64px -179px;
+                        }
+                        &:nth-child(2) span {
+                            background-position: 0 -179px;
+                        }
+                        &:nth-child(3) span {
+                            background-position: -128px -179px;
+                        }
+                    }
+                }
+            }
+            .xiazai {
+                position: relative;
+                float: left;
+                margin-right: 30px;
+
+                a {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+                    background-position: -240px -32px;
+                }
+            }
+            .zhuan {
+                position: relative;
+                float: left;
+                margin-right: 30px;
+
+                a {
+                    display: inline-block;
+                    width: 15px;
+                    height: 15px;
+                    background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+                    background-position: -240px 0;
+                }
+            }
+            .gedan {
+                position: relative;
+                float: right;
+                margin-right: 8px;
+
+                a {
+                    display: inline-block;
+                    width: 60px;
+                    height: 23px;
+                    line-height: 23px;
+                    text-align: center;
+                    color: #fff;
+                    background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+                    background-position: 0 -120px;
+                }
+            }
         }
+    }
+    >span {
+        position: absolute;
+        top: -12px;
+        right: 100px;
+        width: 16px;
+        height: 16px;
+        background: url(http://www.kugou.com/yy/static/images/play/btn.png) no-repeat;
+        background-position: -172px -211px;
+        background-color: #000;
     }
 }
 
-.controls .controls-left .active {
+.controls .controls-zhu .controls-left .active {
     background-position: -60px 0;
 }
 
-.controls .controls-left .active1 {
+.controls .controls-zhu .controls-left .active1 {
     background-position: 0 -60px;
 }
 
-.controls .controls-right .song .active2 {
+.controls .controls-zhu .controls-right .song .active2 {
     background-position: -64px -195px;
 }
 
-.controls .controls-right .song .active3 {
+.controls .controls-zhu .controls-right .song .active3 {
     background-position: -128px -195px;
+}
+
+.controls .controls-zhu .controls-right .xunhuan ul li .active4 {
+    color: #19b5f0;
+}
+
+.controls .active5 {
+
+    background-position: -246px -211px;
+}
+
+.active6 {
+    bottom: -80px;
+}
+
+.active7 {
+    color: red;
 }

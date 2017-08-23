@@ -10,6 +10,94 @@
     <link rel="stylesheet" href="assets/css/reg.css">
     <!-- 选项卡图标样式 -->
     <link rel="shortcut icon" href="http://www.kugou.com/favicon.ico">
+    <style>
+    /*==========以下部分是Validform必须的===========*/
+
+    .Validform_checktip {
+        margin-left: 8px;
+        line-height: 20px;
+        height: 20px;
+        overflow: hidden;
+        color: #999;
+        font-size: 12px;
+    }
+
+    .Validform_right {
+        color: #71b83d;
+        padding-left: 20px;
+        background: url(../images/right.png) no-repeat left center;
+    }
+
+    .Validform_wrong {
+        color: red;
+        padding-left: 20px;
+        white-space: nowrap;
+        background: url(../images/error.png) no-repeat left center;
+    }
+
+    .Validform_loading {
+        padding-left: 20px;
+        background: url(../images/onLoad.gif) no-repeat left center;
+    }
+
+    .Validform_error {
+        background-color: #ffe7e7;
+    }
+
+    #Validform_msg {
+        color: #7d8289;
+        font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
+        width: 280px;
+        -webkit-box-shadow: 2px 2px 3px #aaa;
+        -moz-box-shadow: 2px 2px 3px #aaa;
+        background: #fff;
+        position: absolute;
+        top: 0px;
+        right: 50px;
+        z-index: 99999;
+        display: none;
+        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
+    }
+
+    #Validform_msg .iframe {
+        position: absolute;
+        left: 0px;
+        top: -1px;
+        z-index: -1;
+    }
+
+    #Validform_msg .Validform_title {
+        line-height: 25px;
+        height: 25px;
+        text-align: left;
+        font-weight: bold;
+        padding: 0 8px;
+        color: #fff;
+        position: relative;
+        background-color: #000;
+    }
+
+    #Validform_msg a.Validform_close:link,
+    #Validform_msg a.Validform_close:visited {
+        line-height: 22px;
+        position: absolute;
+        right: 8px;
+        top: 0px;
+        color: #fff;
+        text-decoration: none;
+    }
+
+    #Validform_msg a.Validform_close:hover {
+        color: #cc0;
+    }
+
+    #Validform_msg .Validform_info {
+        padding: 8px;
+        border: 1px solid #000;
+        border-top: none;
+        text-align: left;
+    }
+    </style>
 </head>
 
 <body>
@@ -22,8 +110,8 @@
                <div class="gouwu">
                购物车中还没有商品,赶紧选购吧!
                 <i></i>
-   				 </div>
-    		</span>
+                 </div>
+            </span>
         </ul>
     </div>
     <div class="header-di">
@@ -45,40 +133,42 @@
     <div class="container">
         <div class="reg">
             <div class="reg-top"><span></span></div>
-            <div class="reg-content">
-                <p class="haoma">*手机号码:
-                    <input type="text">
-                    <span>请输入手机号码</span>
-                </p>
-                <p class="duanxin">*短信验证:
-                    <input type="text"><a href="">获取短信</a></p>
-                <p class="mima">*密码:
-                    <input type="text">
-                    <span>密码需要由6-16个字母、数字和符号组成</span>
-                </p>
-                <p class="qiangdu">
-                    密码强度: 弱
-                    <a>
+            <form action="" class="demoform">
+                <div class="reg-content">
+                    <p class="haoma">*手机号码:
+                        <input type="text" name="name" value="" datatype="s5-16" errormsg="昵称至少5个字符,最多16个字符！">
+                        <span>请输入手机号码</span>
+                    </p>
+                    <p class="duanxin">*短信验证:
+                        <input type="text"><a href="">获取短信</a></p>
+                    <p class="mima">*密码:
+                        <input type="text">
+                        <span>密码需要由6-16个字母、数字和符号组成</span>
+                    </p>
+                    <p class="qiangdu">
+                        密码强度: 弱
+                        <a>
                         <span></span>
                         <span></span>
                         <span></span>
                     </a> 强
-                </p>
-                <p class="queren">*确认密码:
-                    <input type="text">
-                    <span>请再次输入密码</span>
-                </p>
-                <p class="sex">* 性别:
-                    <input type="radio"> 男
-                    <input type="radio"> 女
-                </p>
-                <p class="xieyi">
-                    <input type="checkbox" checked> 我已认真阅读并同意 <a href="">用户协议</a> 、<a href="">隐私政策</a>
-                </p>
-                <p class="zhuce">
-                    <input type="button" value="注册">
-                </p>
-            </div>
+                    </p>
+                    <p class="queren">*确认密码:
+                        <input type="text">
+                        <span>请再次输入密码</span>
+                    </p>
+                    <p class="sex">* 性别:
+                        <input type="radio"> 男
+                        <input type="radio"> 女
+                    </p>
+                    <p class="xieyi">
+                        <input type="checkbox" checked> 我已认真阅读并同意 <a href="">用户协议</a> 、<a href="">隐私政策</a>
+                    </p>
+                    <p class="zhuce">
+                        <input type="button" value="注册">
+                    </p>
+                </div>
+            </form>
         </div>
     </div>
     <!-- footer start -->
@@ -107,6 +197,14 @@
     </div>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/reg.js"></script>
+    <!-- // <script src="assets/js/Validform_v5.3.2_min.js"></script> -->
+    //
+    <script>
+    // $(".demoform").Validform({
+    //     tiptype: 1,
+    // });
+    //
+    </script>
 </body>
 
 </html>

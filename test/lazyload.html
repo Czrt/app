@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    div {
+        height: 2000px;
+        border: 1px solid red;
+    }
+
+    img {
+        width: 100%;
+        height: 500px;
+    }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="lazy" data-original="http://imge.kugou.com/commendpic/20170220/20170220150607997002.jpg" alt="">
+        <img class="lazy" data-original="http://imge.kugou.com/commendpic/20170821/20170821184738982895.jpg" alt="">
+        <img class="lazy" data-original="http://imge.kugou.com/commendpic/20170112/20170112174112889575.jpg" alt="">
+        <img class="lazy" data-original="http://imge.kugou.com/commendpic/20170822/20170822190751529340.jpg" alt="">
+        <img class="lazy" data-original="http://imge.kugou.com/commendpic/20170822/20170822190751529340.jpg" alt="">
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.lazyload.min.js"></script>
+    <script>
+    $(function() {
+        $("img.lazy").lazyload({
+            effect: "show",
+            threshold: 1,
+        });
+    });
+    </script>
+</body>
+
+</html>

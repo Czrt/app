@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>七夕将至，情歌告白</title>
+    <!-- 阿里巴巴矢量图 -->
+    <link rel="stylesheet" href="http://at.alicdn.com/t/font_387386_elllc6mjup3w61or.css">
+    <!-- 页面css样式库 -->
+    <link rel="stylesheet" href="assets/css/login-ti.css">
+    <!-- 选项卡图标样式 -->
+    <link rel="shortcut icon" href="http://www.kugou.com/favicon.ico">
+</head>
+
+<body>
+    <div class="header">
+        <div>
+            <a href=""></a>
+            <ul>
+                <li><a href="">登录</a></li>
+                <li><a href="">注册</a></li>
+                <li><a href="">客服</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="datu">
+        <a href="">分享</a>
+    </div>
+    <div class="time">
+        <h3>距离活动开始</h3>
+        <div class="time-zhu">
+            00<span>/</span>00<span>/</span>00<span>/</span>00
+        </div>
+        <div class="shijian"></div>
+        <div class="zhibo"><span>预约观看直播</span></div>
+        <p>已有<span>5766</span>人成功预约</p>
+    </div>
+    <div class="tu2">
+        <imgsrc="http://p1.fx.kgimg.com/v2/kglive/T1g3KfBvZ_1RCvBVdK.jpg" alt="">
+    </div>
+    <div class="shipin">
+        <h3>往期精彩回顾</h3>
+        <div>
+            <a href=""></a>
+        </div>
+    </div>
+    <div class="pinglun">
+        <div class="shuru">
+            <h3>发表评论</h3>
+            <div class="kuang">
+                <textarea></textarea>
+                <span>0/140</span>
+            </div>
+            <div class="fabiao">
+                <a href="">
+    			<span></span>
+    			<p>登录并发表</p>
+    			</a>
+            </div>
+        </div>
+        <div class="remen"><span>热门评论</span></div>
+        <div class="pinglun1">
+            <img src="http://imge.kugou.com/kugouicon/165/20170512/20170512180552274325.jpg" alt="">
+            <div>
+                <p><span>〆看海﹏</span> 2017-08-23 14:52:23</p>
+                <p>Ewine棒棒哒！</p>
+                <p>
+                    <a href=""><i></i><span>点赞(4)</span></a>
+                    <a href=""><i></i><span>回复</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="remen"><span>最新评论</span></div>
+        <div class="pinglun1">
+            <img src="http://imge.kugou.com/kugouicon/165/20170512/20170512180552274325.jpg" alt="">
+            <div>
+                <p><span>〆看海﹏</span> 2017-08-23 14:52:23</p>
+                <p>Ewine棒棒哒！</p>
+                <p>
+                    <a href=""><i></i><span>点赞(4)</span></a>
+                    <a href=""><i></i><span>回复</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="pinglun1">
+            <img src="http://imge.kugou.com/kugouicon/165/20170512/20170512180552274325.jpg" alt="">
+            <div>
+                <p><span>〆看海﹏</span> 2017-08-23 14:52:23</p>
+                <p>Ewine棒棒哒！</p>
+                <p>
+                    <a href=""><i></i><span>点赞(4)</span></a>
+                    <a href=""><i></i><span>回复</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="pinglun1">
+            <img src="http://imge.kugou.com/kugouicon/165/20170512/20170512180552274325.jpg" alt="">
+            <div>
+                <p><span>〆看海﹏</span> 2017-08-23 14:52:23</p>
+                <p>Ewine棒棒哒！</p>
+                <p>
+                    <a href=""><i></i><span>点赞(4)</span></a>
+                    <a href=""><i></i><span>回复</span></a>
+                </p>
+            </div>
+        </div>
+        <div class="chakan">
+            <a href="">查看更多回复</a>
+        </div>
+    </div>
+    <div class="motai">
+        <div class="shadow"></div>
+        <div class="denglu">
+            <div class="guanbi"></div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script>
+    window.onload = function() {
+        function run() {
+            var div = document.querySelector('.time-zhu');
+            var time1 = new Date().getTime();
+            var time2 = new Date('2017/8/31 20:0:0').getTime();
+            var time3 = time2 - time1;
+            var date = Math.floor(time3 / 24 / 60 / 60 / 1000) < 10 ? '0' + Math.floor(time3 / 24 / 60 / 60 / 1000) : Math.floor(time3 / 24 / 60 / 60 / 1000);
+            var hour = Math.floor(time3 / 60 / 60 / 1000) % 24 < 10 ? '0' + Math.floor(time3 / 60 / 60 / 1000) % 24 : Math.floor(time3 / 60 / 60 / 1000) % 24;
+            var minute = Math.floor(time3 / 60 / 1000) % 60 < 10 ? '0' + Math.floor(time3 / 60 / 1000) % 60 : Math.floor(time3 / 60 / 1000) % 60;
+            var second = Math.floor(time3 / 1000) % 60 < 10 ? '0' + Math.floor(time3 / 1000) % 60 : Math.floor(time3 / 1000) % 60;
+            var str = '';
+            str += date + '<span>/</span>';
+            str += hour + '<span>/</span>';
+            str += minute + '<span>/</span >' + second;
+            div.innerHTML = str;
+        }
+        run();
+        setInterval(run, 1000);
+    }
+    </script>
+    <script>
+    $(function() {
+        $('.shadow').css('height', $(document).height());
+        $('.guanbi').click(function() {
+            $('.motai').css('display', 'none');
+        })
+    })
+    </script>
+</body>
+
+</html>

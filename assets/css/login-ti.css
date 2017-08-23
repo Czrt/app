@@ -1,0 +1,352 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  font-family: Microsoft YaHei, \5b8b\4f53, Arial, Verdana;
+  font-size: 12px;
+  background: #ffa1a4;
+}
+
+.header {
+  width: 100%;
+  height: 30px;
+  background-color: #202020;
+  color: #fff;
+}
+
+.header div {
+  width: 1200px;
+  height: 30px;
+  line-height: 30px;
+  margin: 0 auto;
+}
+
+.header div > a {
+  float: left;
+  display: inline-block;
+  width: 84px;
+  height: 30px;
+  background: url(http://s1.fx.kgimg.com/staticPub/images/_6942798.png) no-repeat;
+}
+
+.header div ul {
+  float: right;
+}
+
+.header div ul li {
+  display: inline-block;
+  margin-right: 12px;
+}
+
+.header div ul li a {
+  color: #fff;
+}
+
+.datu {
+  position: relative;
+  width: 100%;
+  height: 420px;
+  background: url(http://p1.fx.kgimg.com/v2/kglive/T1jr_fB5Ej1RCvBVdK.jpg) no-repeat top center;
+}
+
+.datu a {
+  position: absolute;
+  top: 120px;
+  right: 40px;
+  display: block;
+  width: 52px;
+  height: 52px;
+  line-height: 52px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  border-radius: 50%;
+}
+
+.datu a:hover {
+  background-color: #eb6877;
+}
+
+.time {
+  width: 100%;
+  height: 370px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.time h3 {
+  font-size: 20px;
+  color: #3a2a2b;
+}
+
+.time .time-zhu {
+  color: #3a2a2b;
+  font-size: 72px;
+}
+
+.time .time-zhu span {
+  position: relative;
+  top: -15px;
+  font-size: 24px;
+  padding: 17px;
+}
+
+.time .shijian {
+  width: 500px;
+  height: 80px;
+  margin-left: 383px;
+  background: url(http://s3.fx.kgimg.com/staticPub/images/_e68a615.png) no-repeat;
+  background-size: contain;
+}
+
+.time .zhibo span {
+  display: inline-block;
+  width: 300px;
+  height: 76px;
+  line-height: 76px;
+  font-weight: 700;
+  font-size: 36px;
+  border-radius: 50px;
+  color: #3a2a2b;
+  background-color: #fff;
+  margin-top: 20px;
+}
+
+.time .zhibo span:hover {
+  background-color: #eb6877;
+}
+
+.time p {
+  color: #3a2a2b;
+  font-size: 16px;
+  margin-top: 40px;
+}
+
+.time p span {
+  font-size: 24px;
+  color: #5cc5ed;
+}
+
+.tu2 {
+  width: 970px;
+  margin: 0 auto;
+  margin-top: 50px;
+  margin-bottom: 70px;
+}
+
+.shipin {
+  width: 970px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.shipin h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.shipin div {
+  width: 640px;
+  height: 360px;
+  margin: 0 auto;
+  line-height: 360px;
+  text-align: center;
+  background: url(http://p1.fx.kgimg.com/v2/kglive/T1d2D1BCEv1RCvBVdK.jpg) no-repeat;
+  background-size: cover;
+}
+
+.shipin div a {
+  display: inline-block;
+  width: 56px;
+  height: 56px;
+  vertical-align: middle;
+  background: url(http://s2.fx.kgimg.com/staticPub/images/_3023c1a.png) no-repeat;
+  background-position: -152px -200px;
+}
+
+.pinglun {
+  width: 970px;
+  margin: 0 auto;
+  margin-bottom: 70px;
+}
+
+.pinglun .shuru h3 {
+  color: #fff;
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.pinglun .shuru .kuang {
+  display: inline-block;
+  position: relative;
+}
+
+.pinglun .shuru .kuang textarea {
+  width: 863px;
+  height: 79px;
+  color: #aaa;
+  padding: 5px;
+  outline: none;
+  border: 0;
+  resize: none;
+}
+
+.pinglun .shuru .kuang span {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  color: #9d9d9d;
+  font-size: 12px;
+}
+
+.pinglun .shuru .fabiao {
+  float: right;
+  width: 90px;
+  height: 90px;
+  text-align: center;
+  background-color: #5be;
+}
+
+.pinglun .shuru .fabiao a span {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-top: 10px;
+  background: url(http://s2.fx.kgimg.com/staticPub/images/_3023c1a.png) no-repeat;
+  background-position: -372px -100px;
+}
+
+.pinglun .shuru .fabiao a p {
+  color: #fff;
+  font-size: 16px;
+}
+
+.pinglun .remen {
+  width: 970px;
+  margin: 0 auto;
+  margin-top: 36px;
+}
+
+.pinglun .remen span {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  background: #ff4e3c;
+  color: #fff;
+  font-size: 16px;
+}
+
+.pinglun .pinglun1 {
+  padding-bottom: 114px;
+  margin-top: 26px;
+  border-bottom: 1px solid #333;
+}
+
+.pinglun .pinglun1 img {
+  float: left;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+}
+
+.pinglun .pinglun1 > div {
+  float: left;
+  line-height: 30px;
+  margin-left: 25px;
+}
+
+.pinglun .pinglun1 > div p:nth-child(1) {
+  color: #9d9d9d;
+  font-size: 12px;
+}
+
+.pinglun .pinglun1 > div p:nth-child(1) span {
+  display: inline-block;
+  color: #ffffff;
+  margin-right: 10px;
+}
+
+.pinglun .pinglun1 > div p:nth-child(2) {
+  color: #3a2a2b;
+  font-size: 14px;
+}
+
+.pinglun .pinglun1 > div p:nth-child(3) a:first-child {
+  color: #fff;
+}
+
+.pinglun .pinglun1 > div p:nth-child(3) a:first-child i {
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  vertical-align: middle;
+  background: url(http://s2.fx.kgimg.com/staticPub/images/_3023c1a.png) no-repeat;
+  background-position: -33px -276px;
+}
+
+.pinglun .pinglun1 > div p:nth-child(3) a:last-child {
+  color: #fff;
+}
+
+.pinglun .pinglun1 > div p:nth-child(3) a:last-child i {
+  display: inline-block;
+  width: 20px;
+  height: 17px;
+  vertical-align: middle;
+  background: url(http://s2.fx.kgimg.com/staticPub/images/_3023c1a.png) no-repeat;
+  background-position: 0px -276px;
+}
+
+.pinglun .chakan {
+  text-align: center;
+  text-decoration: underline;
+  margin-top: 24px;
+}
+
+.pinglun .chakan a {
+  color: #9d9d9d;
+  font-size: 16px;
+}
+
+.shadow {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.3;
+  z-index: 99;
+}
+
+.denglu {
+  position: fixed;
+  top: 25%;
+  left: 30%;
+  width: 440px;
+  height: 378px;
+  background-color: #fff;
+  z-index: 9999;
+}
+
+.denglu .guanbi {
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: inline-block;
+  width: 14px;
+  height: 13px;
+  background: url(http://www.kugou.com/newuc/static/images/kg_popup_splice01.png?201403141136) no-repeat;
+  background-position: -175px -100px;
+}

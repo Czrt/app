@@ -149,7 +149,7 @@ window.onload = function() {
         audio.currentTime = audio.duration * bili;
         tiao.style.width = X + 'px';
         qiu.style.left = X + 'px';
-
+        audio.play();
     }
     audio.volume = 0.5;
     console.log(audio.volume);

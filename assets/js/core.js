@@ -46,4 +46,9 @@ $(function() {
     }).blur(function() {
         $(this).val('用户名/手机/邮箱');
     })
+
+
+    $('#f-content').focus(function() {
+        $(this).text('');
+    })
 })

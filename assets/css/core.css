@@ -13,6 +13,10 @@ input {
   outline: none;
 }
 
+#f-content {
+  outline: none;
+}
+
 .shadow {
   position: fixed;
   display: none;

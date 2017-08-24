@@ -152,15 +152,12 @@ a {
                     background-color: #f3f3f3;
                 }
                 span {
-                    position: absolute;
-                    right: 200px;
-                    font-size: 0;
-                }
-                //     &:hover {
-    //     span {
-    //         font-size: 14px;
-    //     }
-    // }
+                    position: absolute; // right: 200px; // font-size: 0;
+                } //     &:hover {
+                //     span {
+                //         font-size: 14px;
+                //     }
+                // }
             }
             .duanxin {
                 margin-left: -74px;

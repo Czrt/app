@@ -1,111 +1,167 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
-    <style>
-    /*==========以下部分是Validform必须的===========*/
-
-    .Validform_checktip {
-        margin-left: 8px;
-        line-height: 20px;
-        height: 20px;
-        overflow: hidden;
-        color: #999;
-        font-size: 12px;
+    <style type="text/css">
+    html,
+    body,
+    div {
+        margin: 0;
+        padding: 0;
+        background-color: #212121
     }
 
-    .Validform_right {
-        color: #71b83d;
-        padding-left: 20px;
-        background: url(../images/right.png) no-repeat left center;
+    .mouse-position-wraper {
+        width: 1000px;
+        margin: 40px auto;
     }
 
-    .Validform_wrong {
-        color: red;
-        padding-left: 20px;
-        white-space: nowrap;
-        background: url(../images/error.png) no-repeat left center;
-    }
-
-    .Validform_loading {
-        padding-left: 20px;
-        background: url(../images/onLoad.gif) no-repeat left center;
-    }
-
-    .Validform_error {
-        background-color: #ffe7e7;
-    }
-
-    #Validform_msg {
-        color: #7d8289;
-        font: 12px/1.5 tahoma, arial, \5b8b\4f53, sans-serif;
-        width: 280px;
-        -webkit-box-shadow: 2px 2px 3px #aaa;
-        -moz-box-shadow: 2px 2px 3px #aaa;
-        background: #fff;
-        position: absolute;
-        top: 0px;
-        right: 50px;
-        z-index: 99999;
-        display: none;
-        filter: progid:DXImageTransform.Microsoft.Shadow(Strength=3, Direction=135, Color='#999999');
-    }
-
-    #Validform_msg .iframe {
-        position: absolute;
-        left: 0px;
-        top: -1px;
-        z-index: -1;
-    }
-
-    #Validform_msg .Validform_title {
-        line-height: 25px;
-        height: 25px;
-        text-align: left;
-        font-weight: bold;
-        padding: 0 8px;
-        color: #fff;
+    .mouse-position-item {
+        width: 440px;
+        height: 220px;
         position: relative;
-        background-color: #000;
+        float: left;
+        margin: 5px;
+        overflow: hidden;
     }
 
-    #Validform_msg a.Validform_close:link,
-    #Validform_msg a.Validform_close:visited {
-        line-height: 22px;
+    .mouse-position-item>img {
+        width: 440px;
+        height: 220px;
+    }
+
+    .mouse-position-item>div {
+        width: 440px;
+        height: 220px;
         position: absolute;
-        right: 8px;
-        top: 0px;
-        color: #fff;
-        text-decoration: none;
+        top: 0;
+        transition: transform 1s;
+        transform: rotate(-180deg);
+        transform-origin: top left;
+    }
+    /*设置旋转的原点  start*/
+
+    .mouse-position-item>div.top {
+        transform-origin: top left;
     }
 
-    #Validform_msg a.Validform_close:hover {
-        color: #cc0;
+    .mouse-position-item>div.right {
+        transform-origin: top right;
     }
 
-    #Validform_msg .Validform_info {
-        padding: 8px;
-        border: 1px solid #000;
-        border-top: none;
-        text-align: left;
+    .mouse-position-item>div.bottom {
+        transform-origin: bottom right;
+    }
+
+    .mouse-position-item>div.left {
+        transform-origin: bottom left;
+    }
+    /*设置旋转的原点  end*/
+
+    .mouse-position-item>div>img {
+        min-width: 440px;
+        min-height: 220px;
+    }
+
+    .current div {
+        transform: rotate(0deg);
     }
     </style>
+    <script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+    <script type="text/javascript">
+    $(function() {
+        $("div.mouse-position-item").each(function() {
+            $(this).on({
+                "mouseenter": function(e) {
+                    var _that = $(this),
+                        position = getMouseInElementPosition(_that, e);
+
+                    switch (position) {
+                        case 0:
+                            addPosition(_that.children('div'), "top");
+                            break;
+                        case 1:
+                            addPosition(_that.children('div'), "right");
+                            break;
+                        case 2:
+                            addPosition(_that.children('div'), "bottom");
+                            break;
+                        case 3:
+                            addPosition(_that.children('div'), "left");
+                            break;
+                        default:
+                            addPosition(_that.children('div'), "top");
+                    }
+                    _that.addClass("current");
+                },
+                "mouseleave": function(e) {
+                    var _that = $(this),
+                        position = getMouseInElementPosition(_that, e);
+
+                    switch (position) {
+                        case 0:
+                            addPosition(_that.children('div'), "top");
+                            break;
+                        case 1:
+                            addPosition(_that.children('div'), "right");
+                            break;
+                        case 2:
+                            addPosition(_that.children('div'), "bottom");
+                            break;
+                        case 3:
+                            addPosition(_that.children('div'), "left");
+                            break;
+                        default:
+                            addPosition(_that.children('div'), "top");
+                    }
+                    _that.removeClass("current");
+                }
+            })
+        });
+
+        function addPosition(ele, position) {
+            ele.removeClass().addClass(position);
+        }
+
+        /*获取鼠标进入元素的方位*/
+        function getMouseInElementPosition(ele, event) {
+            var w = ele.width();
+            var h = ele.height();
+            console.log(ele.width())
+            console.log(ele[0].offsetLeft)
+            // 获取x值
+            var x = (event.pageX - ele[0].offsetLeft - (w / 2)) * (w > h ? (h / w) : 1);
+            // 获取y值
+            var y = (event.pageY - ele[0].offsetTop - (h / 2)) * (h > w ? (w / h) : 1);
+            /*direction的值为“0,1,2,3”分别对应着“上，右，下，左”。将点的坐标对应的弧度值换算成角度度数值*/
+            var direction = Math.round((((Math.atan2(y, x) * (180 / Math.PI)) + 180) / 90) + 3) % 4;
+            return direction;
+        }
+    });
+    </script>
 </head>
 
 <body>
-    <form method="post" class="demoform">
-        用户名 :
-        <input type="text" name="username" datatype="s5-16" errormsg="昵称至少5个字符,最多16个字符！" nullmsg="请填写用户名！">
-    </form>
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/Validform_v5.3.2_min.js"></script>
-    <script>
-    $(".demoform").Validform({
-        tiptype: 3,
-    });
-    </script>
+    <div class="mouse-position-wraper">
+        <div class="mouse-position-item">
+            <img src="images/1.png" alt="">
+            <div><img src="images/2.png" alt=""></div>
+        </div>
+        <div class="mouse-position-item">
+            <img src="images/2.png" alt="">
+            <div><img src="images/3.png" alt=""></div>
+        </div>
+        <div class="mouse-position-item">
+            <img src="images/3.png" alt="">
+            <div><img src="images/4.png" alt=""></div>
+        </div>
+        <div class="mouse-position-item">
+            <img src="images/4.png" alt="">
+            <div><img src="images/1.png" alt=""></div>
+        </div>
+    </div>
 </body>
 
 </html>

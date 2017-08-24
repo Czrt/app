@@ -101,7 +101,7 @@ body {
 .time .shijian {
   width: 500px;
   height: 80px;
-  margin-left: 383px;
+  margin-left: 440px;
   background: url(http://s3.fx.kgimg.com/staticPub/images/_e68a615.png) no-repeat;
   background-size: contain;
 }
@@ -319,7 +319,11 @@ body {
   font-size: 16px;
 }
 
-.shadow {
+.motai {
+  display: none;
+}
+
+.motai .shadow {
   position: absolute;
   top: 0;
   left: 0;
@@ -330,23 +334,234 @@ body {
   z-index: 99;
 }
 
-.denglu {
+.motai .denglu {
   position: fixed;
   top: 25%;
-  left: 30%;
+  left: 35%;
   width: 440px;
   height: 378px;
   background-color: #fff;
   z-index: 9999;
 }
 
-.denglu .guanbi {
+.motai .denglu .denglu-zhu {
+  position: relative;
+  height: 316px;
+  padding: 30px 35px;
+}
+
+.motai .denglu .denglu-zhu h4 {
+  width: 140px;
+  font-size: 22px;
+  color: #333;
+  font: 22px/22px Microsoft Yahei, "b8bf53", sans-serif;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(2) {
+  height: 22px;
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+  padding: 7px 10px;
+  transition: .2s;
+  color: #7b7b7b;
+  margin-top: 40px;
+  margin-bottom: 11px;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(2) input {
+  width: 310px;
+  height: 22px;
+  line-height: 22px;
+  border: 0;
+  color: #a1a1a1;
+  background-color: transparent;
+  transition: .2s;
+  outline: none;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(3) {
+  height: 22px;
+  border: 1px solid #ccc;
+  background-color: #f6f6f6;
+  padding: 7px 10px;
+  transition: .2s;
+  color: #7b7b7b;
+  margin-bottom: 11px;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(3) label {
+  float: left;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(3) input {
+  float: left;
+  width: 260px;
+  height: 22px;
+  line-height: 22px;
+  border: 0;
+  color: #a1a1a1;
+  background-color: transparent;
+  transition: .2s;
+  outline: none;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(3) a {
+  float: right;
+  color: #7b7b7b;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(4) input {
+  outline: none;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(4) a {
+  float: right;
+  color: #7b7b7b;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(4) a:hover {
+  color: #474747;
+  text-decoration: underline;
+}
+
+.motai .denglu .denglu-zhu p:nth-child(5) {
+  width: 100%;
+  height: 40px;
+  font-size: 16px;
+  color: #fff;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 4px;
+  margin-top: 30px;
+  margin-bottom: 33px;
+  background-color: #2299ed;
+}
+
+.motai .denglu .denglu-zhu > div .denglu-left {
+  float: left;
+  width: 247px;
+  padding-top: 20px;
+}
+
+.motai .denglu .denglu-zhu > div .denglu-left a {
+  color: #7b7b7b;
+}
+
+.motai .denglu .denglu-zhu > div .denglu-left i:nth-child(2) {
+  display: inline-block;
+  height: 16px;
+  padding-left: 16px;
+  margin-right: 5px;
+  background: url(http://static.kugou.com/common/images/login/kg_popup_splice01.png?201409201440) no-repeat;
+  background-position: -25px -125px;
+}
+
+.motai .denglu .denglu-zhu > div .denglu-left i:nth-child(3) {
+  display: inline-block;
+  height: 16px;
+  padding-left: 16px;
+  margin-right: 5px;
+  background: url(http://static.kugou.com/common/images/login/kg_popup_splice01.png?201409201440) no-repeat;
+  background-position: -125px -125px;
+}
+
+.motai .denglu .denglu-zhu > div .denglu-right {
+  float: right;
+  width: 120px;
+  padding-top: 20px;
+}
+
+.motai .denglu .denglu-zhu > div .denglu-right a {
+  color: #7b7b7b;
+  text-decoration: underline;
+}
+
+.motai .denglu .denglu-zhu .guanbi {
   position: absolute;
-  top: 0;
-  right: 0;
+  top: 10px;
+  right: 10px;
   display: inline-block;
   width: 14px;
   height: 13px;
   background: url(http://www.kugou.com/newuc/static/images/kg_popup_splice01.png?201403141136) no-repeat;
   background-position: -175px -100px;
+}
+
+.footer {
+  width: 100%;
+  height: 209px;
+  background: #f3f3f3;
+  border-top: 1px solid #d8d8d8;
+}
+
+.footer .footer-rong {
+  width: 1000px;
+  margin: 0 auto;
+  padding: 24px 0 40px;
+  color: #8f8f8f;
+}
+
+.footer .footer-rong > a {
+  float: left;
+  display: inline-block;
+  width: 110px;
+  height: 97px;
+  background: url(http://s2.fx.kgimg.com/staticPub/images/_d59fde7.png) no-repeat;
+  background-position: -264px 0px;
+  padding-right: 13px;
+}
+
+.footer .footer-rong .footer-zhu {
+  float: left;
+  width: 600px;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(1) {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(1) span:nth-child(1) {
+  display: inline-block;
+  width: 270px;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(2) {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(2) span:nth-child(1) {
+  display: inline-block;
+  width: 270px;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(3) {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(3) span:nth-child(1) {
+  display: inline-block;
+  width: 270px;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(4) {
+  height: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(4) span:nth-child(1) {
+  float: left;
+  width: 276px;
+  white-space: normal;
+}
+
+.footer .footer-rong .footer-zhu p:nth-child(4) a {
+  float: left;
+  margin-left: 2px;
 }

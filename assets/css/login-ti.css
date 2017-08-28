@@ -516,6 +516,10 @@ body {
   width: 600px;
 }
 
+.footer .footer-rong .footer-zhu a {
+  color: #8f8f8f;
+}
+
 .footer .footer-rong .footer-zhu p:nth-child(1) {
   height: 20px;
   line-height: 20px;
